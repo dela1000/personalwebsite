@@ -123,9 +123,3 @@ main {
 .btn--icon:active {
   transform: translateY(-5px);
 }
-
-@media (max-width: 800px) {
-  .section {
-    margin-top: 4em;
-  }
-}

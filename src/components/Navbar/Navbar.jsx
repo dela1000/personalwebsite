@@ -35,15 +35,15 @@ export default function Navbar() {
         style={{ display: showNavList ? 'flex' : null }}
         className={showNavList ? 'nav__list h-screen' : 'nav__list'}
       >
-        {navList.map((navButton) => (
-          <li className="nav-list-item">
+        {navList.map((navOption) => (
+          <li key={navOption} className="nav-list-item">
             <button type="button" onClick={closeNavList}>
               <a
-                href={navButton}
-                onClick={() => navigate(navButton)}
+                href={navOption}
+                onClick={() => navigate(navOption)}
                 className="link link-nav uppercase"
               >
-                {navButton}
+                {navOption}
               </a>
             </button>
           </li>
