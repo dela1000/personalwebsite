@@ -39,7 +39,14 @@ export default function Navbar() {
       >
         {navList.map((navOption) => (
           <li key={navOption} className="nav-list-item link link-nav">
-            <button className="uppercase" type="button" onClick={() => navigate(navOption)}>
+            <button
+              className="uppercase"
+              type="button"
+              onClick={() => {
+                closeNavList();
+                navigate(navOption);
+              }}
+            >
               {navOption}
             </button>
           </li>
