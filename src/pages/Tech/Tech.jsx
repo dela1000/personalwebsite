@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Projects() {
+export default function Tech() {
   return (
     <div className="h-screen">
-      <div>Projects</div>
+      <div>Tech</div>
     </div>
   );
 }
