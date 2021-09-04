@@ -1,6 +1,7 @@
 import acropolisbwDesktop from '../assets/bg-photos/desktop/acropolisbw.jpg';
 import albaiuliabwDesktop from '../assets/bg-photos/desktop/albaiuliabw.jpg';
 import barcelonabwDesktop from '../assets/bg-photos/desktop/barcelonabw.jpg';
+import benchbwDesktop from '../assets/bg-photos/desktop/benchbw.jpg';
 import cliffsbwDesktop from '../assets/bg-photos/desktop/cliffsbw.jpg';
 import eterabwDesktop from '../assets/bg-photos/desktop/eterabw.jpg';
 import fesbwDesktop from '../assets/bg-photos/desktop/fesbw.jpg';
@@ -17,6 +18,7 @@ import sintrabwDesktop from '../assets/bg-photos/desktop/sintrabw.jpg';
 import acropolisbwMobile from '../assets/bg-photos/mobile/acropolisbw.jpg';
 import albaiuliabwMobile from '../assets/bg-photos/mobile/albaiuliabw.jpg';
 import barcelonabwMobile from '../assets/bg-photos/mobile/barcelonabw.jpg';
+import benchbwMobile from '../assets/bg-photos/mobile/benchbw.jpg';
 import cliffsbwMobile from '../assets/bg-photos/mobile/cliffsbw.jpg';
 import eterabwMobile from '../assets/bg-photos/mobile/eterabw.jpg';
 import fesbwMobile from '../assets/bg-photos/mobile/fesbw.jpg';
@@ -35,6 +37,7 @@ const largeImagesData = {
     acropolisbw: acropolisbwDesktop,
     albaiuliabw: albaiuliabwDesktop,
     barcelonabw: barcelonabwDesktop,
+    benchbw: benchbwDesktop,
     cliffsbw: cliffsbwDesktop,
     eterabw: eterabwDesktop,
     fesbw: fesbwDesktop,
@@ -52,6 +55,7 @@ const largeImagesData = {
     acropolisbw: acropolisbwMobile,
     albaiuliabw: albaiuliabwMobile,
     barcelonabw: barcelonabwMobile,
+    benchbw: benchbwMobile,
     cliffsbw: cliffsbwMobile,
     eterabw: eterabwMobile,
     fesbw: fesbwMobile,

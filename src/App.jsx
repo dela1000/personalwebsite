@@ -42,13 +42,13 @@ export default function App() {
                 <Resume windowType={windowType} />
               </Route>
               <Route exact path="/tech">
-                <Tech />
+                <Tech windowType={windowType} />
               </Route>
               <Route exact path="/about">
-                <About />
+                <About windowType={windowType} />
               </Route>
               <Route exact path="/travel">
-                <Travel />
+                <Travel windowType={windowType} />
               </Route>
               <Route path="*">
                 <Redirect to="/" />
