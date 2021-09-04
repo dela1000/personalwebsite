@@ -1,12 +1,10 @@
 import React from 'react';
+import LargePhoto from '../../components/LargePhoto/index';
 
 export default function Home() {
   return (
     <div className="h-screen">
-      <div>
-        Home Home Home Home Home Home Home Home Home Home Home Home Home Home Home Home Home Home
-        Home Home Home Home Home Home Home
-      </div>
+      <LargePhoto />
     </div>
   );
 }
