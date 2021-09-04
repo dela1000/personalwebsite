@@ -5,23 +5,24 @@ import WbSunnyRoundedIcon from '@material-ui/icons/WbSunnyRounded';
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 import { ThemeContext } from '../../contexts/theme';
+import useWindowDimensions from '../../adapters/useWindowDimensions';
 import './Navbar.css';
 
 const navList = ['home', 'projects', 'resume', 'tech', 'about', 'travel'];
 
 export default function Navbar() {
+  const { width } = useWindowDimensions();
+  const [currentWidth, setCurrentWidth] = useState(0);
   const history = useHistory();
   const [{ themeName, toggleTheme }] = useContext(ThemeContext);
   const [showNavList, setShowNavList] = useState(false);
 
   useEffect(() => {
-    function handleResize() {
+    if (currentWidth !== width) {
       setShowNavList(false);
+      setCurrentWidth(width);
     }
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  }, [width]);
 
   const toggleNavList = () => setShowNavList(!showNavList);
   const closeNavList = () => setShowNavList(false);
@@ -29,6 +30,7 @@ export default function Navbar() {
   const navigate = (navigateTo) => {
     history.push(`/${navigateTo}`);
   };
+
   return (
     <nav className="center">
       <ul

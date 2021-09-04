@@ -17,31 +17,33 @@ export default function App() {
     <div id="top" className={`${themeName} app`}>
       <Header />
       <main>
-        <Router>
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route exact path="/projects">
-              <Projects />
-            </Route>
-            <Route exact path="/resume">
-              <Resume />
-            </Route>
-            <Route exact path="/tech">
-              <Tech />
-            </Route>
-            <Route exact path="/about">
-              <About />
-            </Route>
-            <Route exact path="/travel">
-              <Travel />
-            </Route>
-            <Route path="*">
-              <Redirect to="/" />
-            </Route>
-          </Switch>
-        </Router>
+        <div className="h-screen">
+          <Router>
+            <Switch>
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route exact path="/projects">
+                <Projects />
+              </Route>
+              <Route exact path="/resume">
+                <Resume />
+              </Route>
+              <Route exact path="/tech">
+                <Tech />
+              </Route>
+              <Route exact path="/about">
+                <About />
+              </Route>
+              <Route exact path="/travel">
+                <Travel />
+              </Route>
+              <Route path="*">
+                <Redirect to="/" />
+              </Route>
+            </Switch>
+          </Router>
+        </div>
       </main>
     </div>
   );
