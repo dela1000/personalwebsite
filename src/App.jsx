@@ -1,11 +1,17 @@
+import { useContext } from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import Header from './components/Header/index';
 import Home from './pages/Home/index';
 import Projects from './pages/Projects/index';
+import { ThemeContext } from './contexts/theme';
 import './tailwind.css';
+import './App.css';
 
 export default function App() {
+  const [{ themeName }] = useContext(ThemeContext);
   return (
-    <div id="container" className="flex flex-col h-screen">
+    <div id="top" className={`flex flex-col h-screen ${themeName} app`}>
+      <Header />
       <Router>
         <Switch>
           <Route exact path="/">
