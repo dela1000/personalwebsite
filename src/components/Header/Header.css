@@ -19,6 +19,14 @@
   font-family: 'EB Garamond', serif;
 }
 
+.dark-header {
+  background-color: #23283e;
+}
+
+.light-header {
+  background-color: #fcfcfc;
+}
+
 @media (max-width: 800px) {
   .header {
     height: 6em;
