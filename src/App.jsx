@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import Header from './components/Header/index';
 import Home from './pages/Home/index';
@@ -8,26 +8,38 @@ import About from './pages/About/index';
 import Travel from './pages/Travel/index';
 import Projects from './pages/Projects/index';
 import { ThemeContext } from './contexts/theme';
+import useWindowDimensions from './adapters/useWindowDimensions';
 import './tailwind.css';
 import './App.css';
 
 export default function App() {
   const [{ themeName }] = useContext(ThemeContext);
+  const { width } = useWindowDimensions();
+  const [windowType, setWindowType] = useState('desktop');
+
+  useEffect(() => {
+    if (width < 800) {
+      setWindowType('mobile');
+    } else {
+      setWindowType('desktop');
+    }
+  }, [width]);
+
   return (
     <div id="top" className={`${themeName} app`}>
-      <Header />
-      <main>
-        <div className="h-screen">
-          <Router>
+      <Router>
+        <Header />
+        <main>
+          <div className="h-screen">
             <Switch>
               <Route exact path="/">
-                <Home />
+                <Home windowType={windowType} />
               </Route>
               <Route exact path="/projects">
-                <Projects />
+                <Projects windowType={windowType} />
               </Route>
               <Route exact path="/resume">
-                <Resume />
+                <Resume windowType={windowType} />
               </Route>
               <Route exact path="/tech">
                 <Tech />
@@ -42,9 +54,9 @@ export default function App() {
                 <Redirect to="/" />
               </Route>
             </Switch>
-          </Router>
-        </div>
-      </main>
+          </div>
+        </main>
+      </Router>
     </div>
   );
 }

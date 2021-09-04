@@ -1,20 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import LargePhoto from '../../components/LargePhoto/index';
 import largeImagesData from '../../adapters/imagesData';
-import useWindowDimensions from '../../adapters/useWindowDimensions';
 
-export default function Home() {
-  const { width } = useWindowDimensions();
-  const [windowType, setWindowType] = useState('desktop');
-
-  useEffect(() => {
-    if (width < 800) {
-      setWindowType('mobile');
-    } else {
-      setWindowType('desktop');
-    }
-  }, [width]);
-
+export default function Home({ windowType }) {
   return (
     <div>
       <LargePhoto imageLink={largeImagesData[windowType].merzougabw} />
@@ -22,3 +11,7 @@ export default function Home() {
     </div>
   );
 }
+
+Home.propTypes = {
+  windowType: PropTypes.string.isRequired,
+};

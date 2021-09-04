@@ -38,15 +38,9 @@ export default function Navbar() {
         className={showNavList ? 'nav__list h-screen' : 'nav__list'}
       >
         {navList.map((navOption) => (
-          <li key={navOption} className="nav-list-item">
-            <button type="button" onClick={closeNavList}>
-              <a
-                href={navOption}
-                onClick={() => navigate(navOption)}
-                className="link link-nav uppercase"
-              >
-                {navOption}
-              </a>
+          <li key={navOption} className="nav-list-item link link-nav">
+            <button className="uppercase" type="button" onClick={() => navigate(navOption)}>
+              {navOption}
             </button>
           </li>
         ))}
