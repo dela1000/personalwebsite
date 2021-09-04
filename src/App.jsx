@@ -10,21 +10,23 @@ import './App.css';
 export default function App() {
   const [{ themeName }] = useContext(ThemeContext);
   return (
-    <div id="top" className={`flex flex-col h-screen ${themeName} app`}>
+    <div id="top" className={`${themeName} app`}>
       <Header />
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/projects">
-            <Projects />
-          </Route>
-          <Route path="*">
-            <Redirect to="/" />
-          </Route>
-        </Switch>
-      </Router>
+      <main>
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route exact path="/projects">
+              <Projects />
+            </Route>
+            <Route path="*">
+              <Redirect to="/" />
+            </Route>
+          </Switch>
+        </Router>
+      </main>
     </div>
   );
 }
