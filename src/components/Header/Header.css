@@ -4,10 +4,26 @@
   width: 95%;
   margin: 0 auto;
   justify-content: space-between;
+  z-index: 999;
 }
 
-@media (max-width: 600px) {
+.nav-circle {
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  opacity: 1;
+  padding-left: 1px;
+  background: transparent;
+  border: 2px solid white;
+  text-align: center;
+  font-family: 'EB Garamond', serif;
+}
+
+@media (max-width: 800px) {
   .header {
     height: 6em;
+  }
+  .nav-circle {
+    border: 2px solid transparent;
   }
 }

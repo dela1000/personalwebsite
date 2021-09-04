@@ -48,6 +48,14 @@ export default function Navbar() {
             </button>
           </li>
         ))}
+
+        <li className="nav-list-item">
+          <button type="button" onClick={closeNavList}>
+            <a href="#contact" className="link link-nav uppercase">
+              contact
+            </a>
+          </button>
+        </li>
       </ul>
 
       <button
