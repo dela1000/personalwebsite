@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import LargePhoto from '../../components/LargePhoto/index';
+import TopHero from '../../components/TopHero/index';
 import largeImagesData from '../../adapters/imagesData';
 
 export default function Tech({ windowType }) {
   return (
     <div>
-      <LargePhoto imageLink={largeImagesData[windowType].praguebw} />
-      <LargePhoto imageLink={largeImagesData[windowType].barcelonabw} />
+      <TopHero imageLink={largeImagesData[windowType].praguebw} />
+      <TopHero imageLink={largeImagesData[windowType].barcelonabw} />
     </div>
   );
 }
