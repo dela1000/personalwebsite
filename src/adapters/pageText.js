@@ -51,7 +51,7 @@ const pageText = {
         {
           company: 'UberMedia',
           tag: 'Leading independent developer of dynamic advertising and mobile data solutions, and feature-rich mobile applications',
-          title: 'Full Stack Engineer',
+          title: 'Full Stack Engineer II',
           time: '2016-2021',
           bulletPoints: [
             'Expert development in Angular.js, Vue.js, Node.js, and Ruby on Rails',
@@ -120,7 +120,7 @@ const pageText = {
     header: 'Create beautiful, responsive, and interactive websites exactly as you want them.',
     top: '© 2021 Daniel De La Rosa. All rights reserved.',
     middle: 'All photos by Daniel De La Rosa.',
-    bottom: 'Developed with Angular.js and Node.js and deployed to AWS.',
+    bottom: 'Developed with React and deployed to Netlify.',
   },
 };
 

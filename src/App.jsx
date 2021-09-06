@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import Header from './components/Header/index';
 import Footer from './components/Footer/index';
+import ScrollToTop from './components/ScrollToTop/index';
 import Home from './pages/Home/index';
 import Resume from './pages/Resume/index';
 import Tech from './pages/Tech/index';
@@ -54,6 +55,7 @@ export default function App() {
               <Redirect to="/" />
             </Route>
           </Switch>
+          <ScrollToTop />
           <Footer />
         </main>
       </Router>

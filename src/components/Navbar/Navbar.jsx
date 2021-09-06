@@ -1,7 +1,7 @@
 import { useContext, useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
-import Brightness2Icon from '@material-ui/icons/Brightness2';
-import WbSunnyRoundedIcon from '@material-ui/icons/WbSunnyRounded';
+import BrightnessHighIcon from '@material-ui/icons/BrightnessHigh';
+import BrightnessLowIcon from '@material-ui/icons/BrightnessLow';
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 import { Context } from '../../contexts/context';
@@ -76,7 +76,7 @@ export default function Navbar() {
         className="center btn btn--icon"
         aria-label="toggle theme"
       >
-        {themeName === 'dark' ? <WbSunnyRoundedIcon /> : <Brightness2Icon />}
+        {themeName === 'dark' ? <BrightnessLowIcon /> : <BrightnessHighIcon />}
       </button>
 
       <button

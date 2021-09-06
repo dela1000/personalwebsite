@@ -13,7 +13,7 @@ export default function ResumeHolder({ resumeData }) {
         </div>
         <div className="mt-4">
           {resumeData.experience.map((item) => (
-            <div className="my-4">
+            <div className="my-4" key={item.title}>
               <div className="grid grid-cols-2 gap-4">
                 <div>{item.company}</div>
                 <div className="text-right">
@@ -24,7 +24,9 @@ export default function ResumeHolder({ resumeData }) {
               <div className="margin-top-small mt-2">{item.title}</div>
               <ul className="pl-6">
                 {item.bulletPoints.map((bullet) => (
-                  <li className="font-light">&bull; {bullet}</li>
+                  <li className="font-light" key={bullet}>
+                    &bull; {bullet}
+                  </li>
                 ))}
               </ul>
             </div>
@@ -35,7 +37,7 @@ export default function ResumeHolder({ resumeData }) {
         </div>
         <div className="mt-4">
           {resumeData.education.map((item) => (
-            <div className="grid grid-cols-2 mb-4 gap-1">
+            <div className="grid grid-cols-2 mb-4 gap-1" key={item.degree}>
               <div>{item.school}</div>
               <div className="text-right">
                 <div>{item.time}</div>
