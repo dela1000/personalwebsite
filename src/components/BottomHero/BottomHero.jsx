@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import ContactButton from '../ContactButton/index';
 
 export default function BottomHero({ imageLink, primaryText, secondaryText, windowType }) {
   return (
@@ -11,9 +12,7 @@ export default function BottomHero({ imageLink, primaryText, secondaryText, wind
           <div className={`${windowType}-primary-text white--font monserrat my-5`}>
             {primaryText}
           </div>
-          <button id="contact" type="button">
-            Click Me!
-          </button>
+          <ContactButton />
         </div>
       </div>
       <img

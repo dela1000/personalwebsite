@@ -9,6 +9,9 @@ const pageText = {
       secondaryText: 'Do you have a website idea and need help from an expert?',
     },
   },
+  contactButton: {
+    contactEmail: 'dela1000@gmail.com',
+  },
 };
 
 export default pageText;
