@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import TopHero from '../../components/TopHero/index';
 import BottomHero from '../../components/BottomHero/index';
 import largeImagesData from '../../adapters/imagesData';
+import pageText from '../../adapters/pageText';
 
 export default function Home({ windowType }) {
   return (
@@ -13,15 +14,17 @@ export default function Home({ windowType }) {
             <div className="flex justify-center">
               <TopHero
                 imageLink={largeImagesData[windowType].merzougabw}
-                primaryText="DESIGN. DEVELOP. DELIVER."
-                secondaryText="Creating meaningful experiences through unique online ventures"
+                primaryText={pageText.home.topHero.primaryText}
+                secondaryText={pageText.home.topHero.secondaryText}
               />
             </div>
             <div className="flex mb-auto justify-center">
-              <BottomHero imageLink={largeImagesData[windowType].halongbaybw} />
+              <BottomHero
+                imageLink={largeImagesData[windowType].halongbaybw}
+                primaryText={pageText.home.bottomHero.primaryText}
+                secondaryText={pageText.home.bottomHero.secondaryText}
+              />
             </div>
-
-            <div className="flex mb-auto justify-center">BUTTON GOES HERE</div>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ export default function TopHero({ imageLink, primaryText, secondaryText }) {
   return (
     <div className="relative w-full">
       <div className="absolute center w-full" style={{ height: '100%' }}>
-        <div className="w-full text-center">
+        <div className="w-full text-center px-44">
           <div className="white--font text-7xl monserrat my-5">{primaryText}</div>
           <div className="white--font garamond text-3xl my-5">{secondaryText}</div>
         </div>
