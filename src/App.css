@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
 .app {
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
@@ -122,4 +124,16 @@ main {
 
 .btn--icon:active {
   transform: translateY(-5px);
+}
+
+.white--font {
+  color: white;
+}
+
+.monserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.garamond {
+  font-family: 'EB Garamond', serif;
 }
