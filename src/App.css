@@ -136,3 +136,19 @@ main {
 .garamond {
   font-family: 'EB Garamond', serif;
 }
+
+.desktop-primary-text {
+  font-size: 4.5rem;
+}
+
+.mobile-primary-text {
+  font-size: 2.5rem;
+}
+
+.desktop-secondary-text {
+  font-size: 1.875rem;
+}
+
+.mobile-secondary-text {
+  font-size: 1.3rem;
+}

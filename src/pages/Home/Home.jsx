@@ -16,6 +16,7 @@ export default function Home({ windowType }) {
                 imageLink={largeImagesData[windowType].merzougabw}
                 primaryText={pageText.home.topHero.primaryText}
                 secondaryText={pageText.home.topHero.secondaryText}
+                windowType={windowType}
               />
             </div>
             <div className="flex mb-auto justify-center">
@@ -23,6 +24,7 @@ export default function Home({ windowType }) {
                 imageLink={largeImagesData[windowType].halongbaybw}
                 primaryText={pageText.home.bottomHero.primaryText}
                 secondaryText={pageText.home.bottomHero.secondaryText}
+                windowType={windowType}
               />
             </div>
           </div>
