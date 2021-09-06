@@ -4,7 +4,7 @@ export default function TopHero({ imageLink, primaryText, secondaryText, windowT
   return (
     <div className="relative w-full">
       <div className="absolute center w-full" style={{ height: '100%' }}>
-        <div className="w-full text-center px-10">
+        <div className="w-full text-center px-12">
           <div className={`${windowType}-primary-text white--font monserrat my-5`}>
             {primaryText}
           </div>

@@ -4,7 +4,7 @@ export default function BottomHero({ imageLink, primaryText, secondaryText, wind
   return (
     <div className="relative w-full">
       <div className="absolute center w-full" style={{ height: '100%' }}>
-        <div className="w-full text-center px-10">
+        <div className="w-full text-center px-12">
           <div className={`${windowType}-secondary-text white--font garamond my-5 `}>
             {secondaryText}
           </div>
