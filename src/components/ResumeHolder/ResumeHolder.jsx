@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import resumeFile from '../../assets/DanielDeLaRosa_Resume_2021_full.pdf';
 
 export default function ResumeHolder({ resumeData }) {
   return (
@@ -39,7 +40,7 @@ export default function ResumeHolder({ resumeData }) {
       </div>
       <div className="flex justify-center mt-20">
         <button id="contact" type="button" className="btn btn--outline">
-          <a target="_blank" rel="noreferrer" href={resumeData.resumeLink}>
+          <a target="_blank" rel="noreferrer" href={resumeFile}>
             <div className="pointer">DOWNLOAD RESUME</div>
           </a>
         </button>
