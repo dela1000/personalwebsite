@@ -23,6 +23,16 @@ const pageText = {
       secondaryText: 'Do you have a project idea and need help from an expert?',
     },
   },
+  resume: {
+    topHero: {
+      primaryText: 'EXHAUSTIVE. EXTENSIVE. EXPANDED.',
+      secondaryText: 'Review a bit more about my professional background',
+    },
+    bottomHero: {
+      primaryText: 'HIRE A FULL-STACK ENGINEER TODAY',
+      secondaryText: 'Do you have a website idea and need help from an expert?',
+    },
+  },
   contactButton: {
     contactMe: 'CONTACT ME',
     contactEmail: 'dela1000@gmail.com',
