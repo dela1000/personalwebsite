@@ -1,7 +1,7 @@
 import { useContext } from 'react';
-import './Footer.css';
 import { Context } from '../../contexts/context';
 import pageText from '../../adapters/pageText';
+import './Footer.css';
 
 export default function Footer() {
   const [{ themeName }] = useContext(Context);

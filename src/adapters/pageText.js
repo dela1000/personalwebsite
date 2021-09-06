@@ -1,3 +1,9 @@
+import moment from 'moment';
+
+const yearsAsDev = moment().diff('2015-01-01', 'years', false);
+const yearsinTech = moment().diff('2011-01-01', 'years', false);
+const currentYear = moment().format('YYYY');
+
 const pageText = {
   home: {
     topHero: {
@@ -10,8 +16,7 @@ const pageText = {
     },
     name: 'DANIEL DE LA ROSA',
     header: 'Full Stack Software Engineer',
-    description:
-      'With over 6 years of experience effectively coding websites and applications, my career has included building scalable online projects from the ground up, maintaining and debugging client-facing products, and updating legacy code to match the rapidly changing standards required to run applications securely and efficiently.',
+    description: `With over ${yearsAsDev} years of experience effectively coding websites and applications, my career has included building scalable online projects from the ground up, maintaining and debugging client-facing products, and updating legacy code to match the rapidly changing standards required to run applications securely and efficiently.`,
   },
   projects: {
     topHero: {
@@ -33,8 +38,7 @@ const pageText = {
       secondaryText: 'Do you have a website idea and need help from an expert?',
     },
     header: 'Experience goes a long way',
-    description:
-      'With over 10 years in the technology industry and more than 6 as a Full Stack software engineer, I have cultivated a strong background in program development, providing positive results on all the projects in which I have participated.',
+    description: `With over ${yearsinTech} years in the technology industry and more than ${yearsAsDev} as a Full Stack software engineer, I have cultivated a strong background in program development, providing positive results on all the projects in which I have participated.`,
     resumeData: {
       experience: [
         {
@@ -118,7 +122,7 @@ const pageText = {
   },
   footer: {
     header: 'Create beautiful, responsive, and interactive websites exactly as you want them.',
-    top: '© 2021 Daniel De La Rosa. All rights reserved.',
+    top: `© ${currentYear} Daniel De La Rosa. All rights reserved.`,
     middle: 'All photos by Daniel De La Rosa.',
     bottom: 'Developed with React and deployed to Netlify.',
   },
