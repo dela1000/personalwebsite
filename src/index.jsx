@@ -1,10 +1,10 @@
 import ReactDOM from 'react-dom';
 import App from './App';
-import { ThemeProvider } from './contexts/theme';
+import { Provider } from './contexts/context';
 
 ReactDOM.render(
-  <ThemeProvider>
+  <Provider>
     <App />
-  </ThemeProvider>,
+  </Provider>,
   document.getElementById('root'),
 );

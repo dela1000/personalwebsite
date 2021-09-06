@@ -8,13 +8,13 @@ import Tech from './pages/Tech/index';
 import About from './pages/About/index';
 import Travel from './pages/Travel/index';
 import Projects from './pages/Projects/index';
-import { ThemeContext } from './contexts/theme';
-import useWindowDimensions from './adapters/useWindowDimensions';
+import { Context } from './contexts/context';
+import useWindowDimensions from './contexts/useWindowDimensions';
 import './tailwind.css';
 import './App.css';
 
 export default function App() {
-  const [{ themeName }] = useContext(ThemeContext);
+  const [{ themeName, navbarState }] = useContext(Context);
   const { width } = useWindowDimensions();
   const [windowType, setWindowType] = useState('desktop');
 
@@ -30,7 +30,7 @@ export default function App() {
     <div id="top" className={`${themeName} app`}>
       <Router>
         <Header />
-        <main>
+        <main style={{ display: navbarState ? 'none' : 'block' }}>
           <Switch>
             <Route exact path="/">
               <Home windowType={windowType} />

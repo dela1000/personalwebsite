@@ -11,6 +11,9 @@ export default function BottomHero({ imageLink, primaryText, secondaryText, wind
           <div className={`${windowType}-primary-text white--font monserrat my-5`}>
             {primaryText}
           </div>
+          <button id="contact" type="button">
+            Click Me!
+          </button>
         </div>
       </div>
       <img

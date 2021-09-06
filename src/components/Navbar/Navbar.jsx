@@ -4,8 +4,8 @@ import Brightness2Icon from '@material-ui/icons/Brightness2';
 import WbSunnyRoundedIcon from '@material-ui/icons/WbSunnyRounded';
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
-import { ThemeContext } from '../../contexts/theme';
-import useWindowDimensions from '../../adapters/useWindowDimensions';
+import { Context } from '../../contexts/context';
+import useWindowDimensions from '../../contexts/useWindowDimensions';
 import './Navbar.css';
 
 const navList = ['home', 'projects', 'resume', 'tech', 'about', 'travel'];
@@ -14,18 +14,17 @@ export default function Navbar() {
   const { width } = useWindowDimensions();
   const [currentWidth, setCurrentWidth] = useState(0);
   const history = useHistory();
-  const [{ themeName, toggleTheme }] = useContext(ThemeContext);
-  const [showNavList, setShowNavList] = useState(false);
+  const [{ themeName, toggleTheme, navbarState, toggleNavbar }] = useContext(Context);
 
   useEffect(() => {
     if (currentWidth !== width) {
-      setShowNavList(false);
+      toggleNavbar(false);
       setCurrentWidth(width);
     }
   }, [width]);
 
-  const toggleNavList = () => setShowNavList(!showNavList);
-  const closeNavList = () => setShowNavList(false);
+  const toggleNavList = () => toggleNavbar(!navbarState);
+  const closeNavList = () => toggleNavbar(false);
 
   const navigate = (navigateTo) => {
     history.push(`/${navigateTo}`);
@@ -34,11 +33,11 @@ export default function Navbar() {
   return (
     <nav className="center">
       <ul
-        style={{ display: showNavList ? 'flex' : null }}
-        className={showNavList ? 'nav__list h-screen' : 'nav__list'}
+        style={{ display: navbarState ? 'flex' : null }}
+        className={navbarState ? 'nav__list h-screen' : 'nav__list'}
       >
         {navList.map((navOption) => (
-          <li key={navOption} className="nav-list-item link link-nav">
+          <li key={navOption} className="nav-list-item monserrat link link-nav">
             <button
               className="uppercase"
               type="button"
@@ -52,12 +51,18 @@ export default function Navbar() {
           </li>
         ))}
 
-        <li className="nav-list-item">
-          <button type="button" onClick={closeNavList}>
-            <a href="#contact" className="link link-nav uppercase">
+        <li className="nav-list-item monserrat link link-nav">
+          <a href="#contact">
+            <button
+              className="uppercase"
+              type="button"
+              onClick={() => {
+                closeNavList();
+              }}
+            >
               contact
-            </a>
-          </button>
+            </button>
+          </a>
         </li>
       </ul>
 
@@ -76,7 +81,7 @@ export default function Navbar() {
         className="btn btn--icon nav__hamburger"
         aria-label="toggle navigation"
       >
-        {showNavList ? <CloseIcon /> : <MenuIcon />}
+        {navbarState ? <CloseIcon /> : <MenuIcon />}
       </button>
     </nav>
   );

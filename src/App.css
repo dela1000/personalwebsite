@@ -11,9 +11,9 @@
 .light {
   --color-bg: #fcfcfc;
   --color-bg-alt: #fff;
-  --color-fg: #555;
-  --color-fg-alt: #444;
-  --color-primary: #2978b5;
+  --color-fg: rgb(192, 192, 192);
+  --color-fg-alt: rgb(41, 41, 41);
+  --color-primary: #222222;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -64,6 +64,7 @@ main {
 .link-nav {
   color: var(--color-fg);
   font-weight: 500;
+  margin-top: 5px;
 }
 
 .btn {

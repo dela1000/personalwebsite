@@ -1,10 +1,11 @@
 import { createContext, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
-const ThemeContext = createContext();
+const Context = createContext();
 
-const ThemeProvider = ({ children }) => {
-  const [themeName, setThemeName] = useState('dark');
+const Provider = ({ children }) => {
+  const [themeName, setThemeName] = useState('light');
+  const [navbarState, setNavbarState] = useState(false);
 
   useEffect(() => {
     const isDark = localStorage.getItem('themeName') === 'dark';
@@ -17,13 +18,19 @@ const ThemeProvider = ({ children }) => {
     setThemeName(name);
   };
 
+  const toggleNavbar = (newState) => {
+    setNavbarState(newState);
+  };
+
   return (
-    <ThemeContext.Provider value={[{ themeName, toggleTheme }]}>{children}</ThemeContext.Provider>
+    <Context.Provider value={[{ themeName, toggleTheme, navbarState, toggleNavbar }]}>
+      {children}
+    </Context.Provider>
   );
 };
 
-ThemeProvider.propTypes = {
+Provider.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export { ThemeProvider, ThemeContext };
+export { Provider, Context };

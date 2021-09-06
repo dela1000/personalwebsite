@@ -1,9 +1,9 @@
 import { useContext } from 'react';
 import './Footer.css';
-import { ThemeContext } from '../../contexts/theme';
+import { Context } from '../../contexts/context';
 
 export default function Footer() {
-  const [{ themeName }] = useContext(ThemeContext);
+  const [{ themeName }] = useContext(Context);
   return (
     <footer
       id="top"
