@@ -17,6 +17,12 @@ const pageText = {
     contactMe: 'CONTACT ME',
     contactEmail: 'dela1000@gmail.com',
   },
+  footer: {
+    header: 'Create beautiful, responsive, and interactive websites exactly as you want them.',
+    top: '© 2021 Daniel De La Rosa. All rights reserved.',
+    middle: 'All photos by Daniel De La Rosa.',
+    bottom: 'Developed with Angular.js and Node.js and deployed to AWS.',
+  },
 };
 
 export default pageText;
