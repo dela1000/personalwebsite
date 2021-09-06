@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer
       id="top"
-      className={`${themeName}-header w-screen items-center pt-10 pb-20 flex justify-around sticky`}
+      className={`${themeName}-header w-screen items-center pt-10 pb-20 px-20 flex justify-around sticky`}
     >
       <div className="flex flex-col text-center">
         <div className="py-10 text-2xl garamond">{pageText.footer.header}</div>
