@@ -9,7 +9,7 @@ export default function ContactButton() {
       rel="noreferrer"
     >
       <button id="contact" type="button" className="btn btn--outline">
-        CONTACT ME
+        {pageText.contactButton.contactMe}
       </button>
     </a>
   );

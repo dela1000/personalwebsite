@@ -10,6 +10,7 @@ const pageText = {
     },
   },
   contactButton: {
+    contactMe: 'CONTACT ME',
     contactEmail: 'dela1000@gmail.com',
   },
 };
