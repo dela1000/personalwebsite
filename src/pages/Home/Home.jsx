@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import TopHero from '../../components/TopHero/index';
 import BottomHero from '../../components/BottomHero/index';
+import CenterContainer from '../../components/CenterContainer/index';
+import TextSection from '../../components/TextSection/index';
 import largeImagesData from '../../adapters/imagesData';
 import pageText from '../../adapters/pageText';
 
@@ -19,6 +21,13 @@ export default function Home({ windowType }) {
                 windowType={windowType}
               />
             </div>
+            <CenterContainer>
+              <TextSection
+                name={pageText.home.name}
+                text={pageText.home.header}
+                description={pageText.home.description}
+              />
+            </CenterContainer>
             <div className="flex mb-auto justify-center">
               <BottomHero
                 imageLink={largeImagesData[windowType].halongbaybw}
