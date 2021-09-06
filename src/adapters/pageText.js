@@ -99,7 +99,7 @@ const pageText = {
           time: '2005-2008',
         },
       ],
-      resumeLink: '/public/DanielDeLaRosaResume.pdf',
+      resumeLink: '../public/DanielDeLaRosa_Resume_2021_full.pdf',
     },
   },
   contactButton: {

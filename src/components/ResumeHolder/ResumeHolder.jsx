@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 
 export default function ResumeHolder({ resumeData }) {
-  console.log('+++ 4: src/components/ResumeHolder/ResumeHolder.jsx - resumeData: ', resumeData);
   return (
     <div className="px-20 lg:px-96 py-32 bg-gray-200 text-gray-600">
       <div className="garamond font-size-largest font-weight-medium text-2xl">
@@ -26,7 +25,7 @@ export default function ResumeHolder({ resumeData }) {
           </div>
         ))}
       </div>
-      <div className="garamond font-size-largest font-weight-medium text-2xl">Education</div>
+      <div className="garamond font-size-largest font-weight-medium text-2xl mt-10">Education</div>
       <div className="mt-4">
         {resumeData.education.map((item) => (
           <div className="grid grid-cols-2 mb-4 gap-1">
@@ -37,6 +36,13 @@ export default function ResumeHolder({ resumeData }) {
             <div className="margin-top-small text-sm font-light italic">{item.degree}</div>
           </div>
         ))}
+      </div>
+      <div className="flex justify-center mt-20">
+        <button id="contact" type="button" className="btn btn--outline">
+          <a target="_blank" rel="noreferrer" href={resumeData.resumeLink}>
+            <div className="pointer">DOWNLOAD RESUME</div>
+          </a>
+        </button>
       </div>
     </div>
   );
