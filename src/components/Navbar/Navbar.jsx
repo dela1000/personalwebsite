@@ -34,7 +34,11 @@ export default function Navbar() {
     <nav className="center">
       <ul
         style={{ display: navbarState ? 'flex' : null }}
-        className={navbarState ? 'nav__list h-screen' : 'nav__list'}
+        className={
+          navbarState
+            ? `${themeName}_nav__list__background_color nav__list h-screen`
+            : `${themeName}_nav__list__background_color nav__list`
+        }
       >
         {navList.map((navOption) => (
           <li key={navOption} className="nav-list-item monserrat link link-nav">
