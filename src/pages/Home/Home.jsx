@@ -4,7 +4,7 @@ import TopHero from '../../components/TopHero/index';
 import BottomHero from '../../components/BottomHero/index';
 import CenterContainer from '../../components/CenterContainer/index';
 import TextSection from '../../components/TextSection/index';
-import largeImagesData from '../../adapters/imagesData';
+import largeImagesData from '../../adapters/largeImagesData';
 import pageText from '../../adapters/pageText';
 
 export default function Home({ windowType }) {

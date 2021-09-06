@@ -126,7 +126,11 @@ main {
   transform: translateY(-5px);
 }
 
-.white--font {
+.hero-image-height {
+  height: 700px;
+}
+
+.white-font {
   color: white;
 }
 
@@ -140,10 +144,12 @@ main {
 
 .desktop-primary-text {
   font-size: 4.5rem;
+  font-weight: 700;
 }
 
 .mobile-primary-text {
   font-size: 2.5rem;
+  font-weight: 700;
 }
 
 .desktop-secondary-text {
@@ -152,4 +158,8 @@ main {
 
 .mobile-secondary-text {
   font-size: 1.3rem;
+}
+
+.image-darkness {
+  filter: brightness(75%);
 }

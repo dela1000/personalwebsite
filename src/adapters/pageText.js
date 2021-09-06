@@ -13,6 +13,16 @@ const pageText = {
     description:
       'With over 6 years of experience effectively coding websites and applications, my career has included building scalable online projects from the ground up, maintaining and debugging client-facing products, and updating legacy code to match the rapidly changing standards required to run applications securely and efficiently.',
   },
+  projects: {
+    topHero: {
+      primaryText: 'PLAN. PRODUCE. PUBLISH.',
+      secondaryText: 'Creating meaningful experiences through unique online ventures',
+    },
+    bottomHero: {
+      primaryText: 'GET YOUR WEB PROJECT STARTED TODAY',
+      secondaryText: 'Do you have a project idea and need help from an expert?',
+    },
+  },
   contactButton: {
     contactMe: 'CONTACT ME',
     contactEmail: 'dela1000@gmail.com',
