@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import Header from './components/Header/index';
+import Footer from './components/Footer/index';
 import Home from './pages/Home/index';
 import Resume from './pages/Resume/index';
 import Tech from './pages/Tech/index';
@@ -30,31 +31,30 @@ export default function App() {
       <Router>
         <Header />
         <main>
-          <div className="h-screen">
-            <Switch>
-              <Route exact path="/">
-                <Home windowType={windowType} />
-              </Route>
-              <Route exact path="/projects">
-                <Projects windowType={windowType} />
-              </Route>
-              <Route exact path="/resume">
-                <Resume windowType={windowType} />
-              </Route>
-              <Route exact path="/tech">
-                <Tech windowType={windowType} />
-              </Route>
-              <Route exact path="/about">
-                <About windowType={windowType} />
-              </Route>
-              <Route exact path="/travel">
-                <Travel windowType={windowType} />
-              </Route>
-              <Route path="*">
-                <Redirect to="/" />
-              </Route>
-            </Switch>
-          </div>
+          <Switch>
+            <Route exact path="/">
+              <Home windowType={windowType} />
+            </Route>
+            <Route exact path="/projects">
+              <Projects windowType={windowType} />
+            </Route>
+            <Route exact path="/resume">
+              <Resume windowType={windowType} />
+            </Route>
+            <Route exact path="/tech">
+              <Tech windowType={windowType} />
+            </Route>
+            <Route exact path="/about">
+              <About windowType={windowType} />
+            </Route>
+            <Route exact path="/travel">
+              <Travel windowType={windowType} />
+            </Route>
+            <Route path="*">
+              <Redirect to="/" />
+            </Route>
+          </Switch>
+          <Footer />
         </main>
       </Router>
     </div>
