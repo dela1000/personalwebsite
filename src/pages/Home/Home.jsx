@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import TopHero from '../../components/TopHero/index';
-import BottomHero from '../../components/BottomHero/index';
+import Hero from '../../components/Hero/index';
 import CenterContainer from '../../components/CenterContainer/index';
 import TextSection from '../../components/TextSection/index';
 import largeImagesData from '../../adapters/largeImagesData';
@@ -14,10 +13,10 @@ export default function Home({ windowType }) {
 
   return (
     <div className="fade-in">
-      <TopHero
+      <Hero
         imageLink={largeImagesData[windowType].merzougabw}
-        primaryText={pageText.home.topHero.primaryText}
-        secondaryText={pageText.home.topHero.secondaryText}
+        centerText={pageText.home.topHero.primaryText}
+        bottomText={pageText.home.topHero.secondaryText}
         windowType={windowType}
       />
       <CenterContainer>
@@ -27,10 +26,10 @@ export default function Home({ windowType }) {
           description={pageText.home.description}
         />
       </CenterContainer>
-      <BottomHero
+      <Hero
         imageLink={largeImagesData[windowType].halongbaybw}
-        primaryText={pageText.home.bottomHero.primaryText}
-        secondaryText={pageText.home.bottomHero.secondaryText}
+        topText={pageText.home.bottomHero.secondaryText}
+        centerText={pageText.home.bottomHero.primaryText}
         contactText={pageText.contactButton.contactMe}
         windowType={windowType}
       />

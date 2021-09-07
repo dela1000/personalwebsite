@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import TopHero from '../../components/TopHero/index';
-import BottomHero from '../../components/BottomHero/index';
+import Hero from '../../components/Hero/index';
 import TextSection from '../../components/TextSection/index';
 import ProjectImagesSection from '../../components/ProjectImagesSection/index';
 import largeImagesData from '../../adapters/largeImagesData';
@@ -15,10 +14,10 @@ export default function Projects({ windowType }) {
 
   return (
     <div className="fade-in">
-      <TopHero
+      <Hero
         imageLink={largeImagesData[windowType].acropolisbw}
-        primaryText={pageText.projects.topHero.primaryText}
-        secondaryText={pageText.projects.topHero.secondaryText}
+        centerText={pageText.projects.topHero.primaryText}
+        bottomText={pageText.projects.topHero.secondaryText}
         windowType={windowType}
       />
 
@@ -60,10 +59,10 @@ export default function Projects({ windowType }) {
         </div>
       </div>
 
-      <BottomHero
+      <Hero
         imageLink={largeImagesData[windowType].albaiuliabw}
-        primaryText={pageText.projects.bottomHero.primaryText}
-        secondaryText={pageText.projects.bottomHero.secondaryText}
+        topText={pageText.projects.bottomHero.secondaryText}
+        centerText={pageText.projects.bottomHero.primaryText}
         contactText={pageText.contactButton.contactMe}
         windowType={windowType}
       />

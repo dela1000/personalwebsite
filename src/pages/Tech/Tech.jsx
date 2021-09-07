@@ -1,10 +1,9 @@
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import TopHero from '../../components/TopHero/index';
 import CenterContainer from '../../components/CenterContainer/index';
 import TextSection from '../../components/TextSection/index';
 import TechImagesGrid from '../../components/TechImagesGrid/index';
-import BottomHero from '../../components/BottomHero/index';
+import Hero from '../../components/Hero/index';
 import largeImagesData from '../../adapters/largeImagesData';
 import pageText from '../../adapters/pageText';
 import techImagesData from '../../adapters/techImagesData';
@@ -16,20 +15,20 @@ export default function Tech({ windowType }) {
 
   return (
     <div className="fade-in">
-      <TopHero
+      <Hero
         imageLink={largeImagesData[windowType].praguebw}
-        primaryText={pageText.tech.topHero.primaryText}
-        secondaryText={pageText.tech.topHero.secondaryText}
+        centerText={pageText.tech.topHero.primaryText}
+        bottomText={pageText.tech.topHero.secondaryText}
         windowType={windowType}
       />
       <CenterContainer>
         <TextSection text={pageText.tech.header} description={pageText.tech.description} />
         <TechImagesGrid imagesData={techImagesData} />
       </CenterContainer>
-      <BottomHero
+      <Hero
         imageLink={largeImagesData[windowType].barcelonabw}
-        primaryText={pageText.tech.bottomHero.primaryText}
-        secondaryText={pageText.tech.bottomHero.secondaryText}
+        topText={pageText.tech.bottomHero.secondaryText}
+        centerText={pageText.tech.bottomHero.primaryText}
         contactText={pageText.contactButton.contactMe}
         windowType={windowType}
       />

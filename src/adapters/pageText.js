@@ -124,7 +124,7 @@ const pageText = {
     bottomHero: {
       primaryText: 'GET YOUR WEB PROJECT STARTED TODAY',
       secondaryText:
-        'With expertise on these technologies your website will be exactly as you desire.',
+        'With expertise on these technologies your website will be exactly as you want it.',
     },
     header: 'Creating what you want with the right tools',
     description:

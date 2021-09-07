@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import TopHero from '../../components/TopHero/index';
-import BottomHero from '../../components/BottomHero/index';
+import Hero from '../../components/Hero/index';
 import TravelSection from '../../components/TravelSection/index';
 import PersonalImagesGrid from '../../components/PersonalImagesGrid/index';
 import largeImagesData from '../../adapters/largeImagesData';
@@ -15,17 +14,17 @@ export default function Travel({ windowType }) {
 
   return (
     <div className="fade-in">
-      <TopHero
+      <Hero
         imageLink={largeImagesData[windowType].benchbw}
-        primaryText={pageText.travel.topHero.primaryText}
-        secondaryText={pageText.travel.topHero.secondaryText}
+        centerText={pageText.travel.topHero.primaryText}
+        bottomText={pageText.travel.topHero.secondaryText}
         windowType={windowType}
       />
       <TravelSection travelText={pageText.travel} travelImagesData={travelImagesData} />
       <PersonalImagesGrid imagesData={travelImagesData.gridPhotos} />
-      <BottomHero
+      <Hero
         imageLink={largeImagesData[windowType].cliffsbw}
-        primaryText={pageText.travel.topHero.primaryText}
+        centerText={pageText.travel.bottomHero.primaryText}
         windowType={windowType}
         contactText={pageText.travel.contactUs}
       />
