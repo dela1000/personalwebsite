@@ -42,8 +42,8 @@ export default function TravelSection({ travelText, travelImagesData }) {
                 ))}
               </ul>
             </div>
-            <div className="lg:w-1/2">
-              <div className="flex items-center justify-center image-transition-wrap">
+            <div className="flex items-center justify-center lg:w-1/2">
+              <div className="image-transition-wrap">
                 <img
                   className="sepia image-transition"
                   src={travelImagesData.athens}
@@ -66,8 +66,8 @@ export default function TravelSection({ travelText, travelImagesData }) {
       >
         <TextSection text="Who are we" />
         <div className="flex flex-wrap">
-          <div className="w-full lg:w-1/2 mt-10">
-            <div className="flex items-center justify-center image-transition-wrap">
+          <div className="flex items-center justify-center w-full lg:w-1/2 mt-10">
+            <div className="image-transition-wrap">
               <img
                 className="sepia w-96 image-transition"
                 src={travelImagesData.danielIreland}
@@ -77,7 +77,7 @@ export default function TravelSection({ travelText, travelImagesData }) {
           </div>
           <div className="lg:w-1/2 mt-10">
             <div className="h-full flex items-center justify-center">
-              <div className="description-text-size monserrat p-10">
+              <div className="description-text-size monserrat p-10 text-center lg:text-left">
                 <span className="font-bold">{travelText.ddr}</span>
                 <span>{travelText.dBio}</span>
               </div>
@@ -88,13 +88,13 @@ export default function TravelSection({ travelText, travelImagesData }) {
         <div className="flex flex-wrap flex-wrap-reverse mt-10">
           <div className="lg:w-1/2 mt-10">
             <div className="h-full flex items-center justify-center">
-              <div className="description-text-size monserrat p-10 text-right">
+              <div className="description-text-size monserrat p-10 text-center lg:text-right">
                 <span className="font-bold">{travelText.rw}</span>
                 <span>{travelText.rBio}</span>
               </div>
             </div>
           </div>
-          <div className="w-full lg:w-1/2 mt-10">
+          <div className="flex items-center justify-center w-full lg:w-1/2 mt-10">
             <div className="flex items-center justify-center image-transition-wrap">
               <img
                 className="sepia w-96 image-transition"

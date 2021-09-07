@@ -173,7 +173,7 @@ main {
   font-size: 1.5rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .header-text-size {
     font-size: 1.5rem;
   }
@@ -189,9 +189,15 @@ main {
   padding: 9rem 20rem 9rem 20rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .center-container-padding {
     padding: 3rem 4rem 3rem 4rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .center-container-padding {
+    padding: 6rem 12rem 6rem 12rem;
   }
 }
 

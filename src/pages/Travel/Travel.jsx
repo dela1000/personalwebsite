@@ -21,9 +21,7 @@ export default function Travel({ windowType }) {
         secondaryText={pageText.travel.topHero.secondaryText}
         windowType={windowType}
       />
-
       <TravelSection travelText={pageText.travel} travelImagesData={travelImagesData} />
-
       <PersonalImagesGrid imagesData={travelImagesData.gridPhotos} />
       <BottomHero
         imageLink={largeImagesData[windowType].cliffsbw}

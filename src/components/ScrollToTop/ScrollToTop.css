@@ -6,7 +6,7 @@
   z-index: 9999;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .scroll-top {
     display: none;
   }

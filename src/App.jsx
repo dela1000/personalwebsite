@@ -20,7 +20,7 @@ export default function App() {
   const [windowType, setWindowType] = useState('desktop');
 
   useEffect(() => {
-    if (width < 800) {
+    if (width < 768) {
       setWindowType('mobile');
     } else {
       setWindowType('desktop');
