@@ -49,7 +49,7 @@ export default function ResumeHolder({ resumeData }) {
       </div>
       <div className={`${themeName === 'dark' ? 'bg-gray-500' : 'bg-gray-400'} p-20`}>
         <div className="flex items-center justify-center">
-          <button id="contact" type="button" className="btn btn--outline">
+          <button id="contact" type="button" className="btn btn-outline">
             <a target="_blank" rel="noreferrer" href={resumeFile}>
               <div className="pointer">DOWNLOAD RESUME</div>
             </a>

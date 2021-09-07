@@ -60,6 +60,11 @@ main {
   outline: 0;
 }
 
+.link:active {
+  transform: translateY(-5px);
+  transition: 0.1s ease-in-out;
+}
+
 .link-nav {
   color: var(--color-fg);
   font-weight: 500;
@@ -73,7 +78,7 @@ main {
   transition: transform 0.2s ease-in-out;
 }
 
-.btn--outline {
+.btn-outline {
   color: white;
   border: 2px solid white;
   position: relative;
@@ -81,11 +86,11 @@ main {
   z-index: 1;
 }
 
-.btn--outline:hover {
+.btn-outline:hover {
   color: white;
 }
 
-.btn--outline:before {
+.btn-outline:before {
   content: '';
   position: absolute;
   background-color: var(--color-primary);
@@ -97,30 +102,19 @@ main {
   transition: right 0.2s ease-in-out;
 }
 
-.btn--outline:hover:before {
+.btn-outline:hover:before {
   right: 0;
 }
 
-.btn--plain {
-  text-transform: initial;
-  background-color: var(--color-bg-alt);
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-  border: 0;
-}
-
-.btn--plain:hover {
-  transform: translateY(-4px);
-}
-
-.btn--icon {
+.btn-icon {
   padding: 0;
 }
 
-.btn--icon:hover {
+.btn-icon:hover {
   color: var(--color-primary);
 }
 
-.btn--icon:active {
+.btn-icon:active {
   transform: translateY(-5px);
 }
 

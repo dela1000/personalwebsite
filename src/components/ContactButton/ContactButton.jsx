@@ -9,7 +9,7 @@ export default function ContactButton({ text }) {
       target="_blank"
       rel="noreferrer"
     >
-      <button type="button" className="btn btn--outline uppercase">
+      <button type="button" className="btn btn-outline uppercase">
         {text}
       </button>
     </a>

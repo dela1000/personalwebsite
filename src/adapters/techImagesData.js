@@ -12,12 +12,12 @@ import flutter from '../assets/logos/flutter.png';
 import grunt from '../assets/logos/grunt.png';
 
 const techImagesData = [
-  { img: html, name: 'html' },
-  { img: css, name: 'css' },
   { img: react, name: 'react' },
   { img: node, name: 'node' },
   { img: aws, name: 'aws' },
   { img: git, name: 'git' },
+  { img: html, name: 'html' },
+  { img: css, name: 'css' },
   { img: angular, name: 'angular' },
   { img: adobe, name: 'adobe' },
   { img: ionic, name: 'ionic' },

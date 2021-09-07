@@ -73,7 +73,7 @@ export default function Navbar() {
       <button
         type="button"
         onClick={toggleTheme}
-        className="center btn btn--icon"
+        className="center btn btn-icon"
         aria-label="toggle theme"
       >
         {themeName === 'dark' ? <BrightnessLowIcon /> : <BrightnessHighIcon />}
@@ -82,7 +82,7 @@ export default function Navbar() {
       <button
         type="button"
         onClick={toggleNavList}
-        className="btn btn--icon nav__hamburger"
+        className="btn btn-icon nav__hamburger"
         aria-label="toggle navigation"
       >
         {navbarState ? <CloseIcon /> : <MenuIcon />}
