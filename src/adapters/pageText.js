@@ -11,11 +11,11 @@ const pageText = {
       secondaryText: 'Creating meaningful experiences through unique online ventures',
     },
     bottomHero: {
-      primaryText: 'HIRE A FULL-STACK ENGINEER TODAY',
+      primaryText: 'HIRE A SENIOR FULL STACK ENGINEER TODAY',
       secondaryText: 'Do you have a website idea and need help from an expert?',
     },
     name: 'DANIEL DE LA ROSA',
-    header: 'Full Stack Software Engineer',
+    header: 'Senior Full Stack Engineer',
     description: `With over ${yearsAsDev} years of experience effectively coding websites and applications, my career has included building scalable online projects from the ground up, maintaining and debugging client-facing products, and updating legacy code to match the rapidly changing standards required to run applications securely and efficiently.`,
   },
   projects: {
@@ -34,11 +34,11 @@ const pageText = {
       secondaryText: 'Review a bit more about my professional background',
     },
     bottomHero: {
-      primaryText: 'HIRE A FULL-STACK ENGINEER TODAY',
+      primaryText: 'HIRE A SENIOR FULL STACK ENGINEER TODAY',
       secondaryText: 'Do you have a website idea and need help from an expert?',
     },
     header: 'Experience goes a long way',
-    description: `With over ${yearsinTech} years in the technology industry and more than ${yearsAsDev} as a Full Stack software engineer, I have cultivated a strong background in program development, providing positive results on all the projects in which I have participated.`,
+    description: `With over ${yearsinTech} years in the technology industry and more than ${yearsAsDev} as a Full Stack engineer, I have cultivated a strong background in program development, providing positive results on all the projects in which I have participated.`,
     resumeData: {
       experience: [
         {
@@ -69,7 +69,7 @@ const pageText = {
           title: 'Full Stack Engineer',
           time: '2020-2021',
           bulletPoints: [
-            'Building full-stack websites and mobile applications using only the latest technologies such as React.js and Node.js',
+            'Building full stack websites and mobile applications using only the latest technologies such as React.js and Node.js',
             "Provide complete application development for all of our clients' needs",
             'Support legacy products with any development updates, bugfixes, and 3rd party compliances',
           ],
@@ -136,7 +136,7 @@ const pageText = {
       secondaryText: 'Learn a bit more about who I am away from my laptop.',
     },
     bottomHero: {
-      primaryText: 'HIRE A FULL-STACK ENGINEER TODAY',
+      primaryText: 'HIRE A SENIOR FULL STACK ENGINEER TODAY',
       secondaryText: 'Do you have a website idea and need help from an expert?',
     },
     header: 'Fun Facts',
