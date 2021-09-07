@@ -7,7 +7,7 @@ export default function ResumeHolder({ resumeData }) {
   const [{ themeName }] = useContext(Context);
   return (
     <div className={themeName === 'dark' ? 'bg-gray-400' : 'bg-gray-300'}>
-      <div className="px-20 lg:px-96 py-32 text-gray-600">
+      <div className="px-20 lg:px-96 pt-32 pb-16 text-gray-600">
         <div className="garamond font-size-largest font-weight-medium text-4xl">
           Relevant Experience
         </div>
@@ -46,7 +46,9 @@ export default function ResumeHolder({ resumeData }) {
             </div>
           ))}
         </div>
-        <div className="flex justify-center mt-20">
+      </div>
+      <div className={`${themeName === 'dark' ? 'bg-gray-500' : 'bg-gray-400'} p-20`}>
+        <div className="flex items-center justify-center">
           <button id="contact" type="button" className="btn btn--outline">
             <a target="_blank" rel="noreferrer" href={resumeFile}>
               <div className="pointer">DOWNLOAD RESUME</div>

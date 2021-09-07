@@ -26,6 +26,7 @@ export default function Tech({ windowType }) {
         imageLink={largeImagesData[windowType].barcelonabw}
         primaryText={pageText.tech.bottomHero.primaryText}
         secondaryText={pageText.tech.bottomHero.secondaryText}
+        contactText={pageText.contactButton.contactMe}
         windowType={windowType}
       />
     </div>

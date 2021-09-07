@@ -25,6 +25,7 @@ export default function Resume({ windowType }) {
         imageLink={largeImagesData[windowType].lisbonbw}
         primaryText={pageText.resume.bottomHero.primaryText}
         secondaryText={pageText.resume.bottomHero.secondaryText}
+        contactText={pageText.contactButton.contactMe}
         windowType={windowType}
       />
     </div>

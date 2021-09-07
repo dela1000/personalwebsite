@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 export default function TopHero({ imageLink, primaryText, secondaryText, windowType }) {
   return (
-    <div className="relative">
+    <div className="relative z-0">
       <div className="absolute center w-full" style={{ height: '100%' }}>
         <div className="w-full text-center px-12 white-font">
           <div className={`${windowType}-primary-text monserrat my-5`}>{primaryText}</div>

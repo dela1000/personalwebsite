@@ -9,7 +9,7 @@ export default function ContactButton({ text }) {
       target="_blank"
       rel="noreferrer"
     >
-      <button id="contact" type="button" className="btn btn--outline uppercase">
+      <button type="button" className="btn btn--outline uppercase">
         {text}
       </button>
     </a>
@@ -17,9 +17,5 @@ export default function ContactButton({ text }) {
 }
 
 ContactButton.propTypes = {
-  text: PropTypes.string,
-};
-
-ContactButton.defaultProps = {
-  text: pageText.contactButton.contactMe,
+  text: PropTypes.string.isRequired,
 };

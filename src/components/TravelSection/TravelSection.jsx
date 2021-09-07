@@ -76,7 +76,10 @@ export default function TravelSection({ travelText, travelImagesData }) {
           </div>
           <div className="lg:w-1/2 mt-10">
             <div className="h-full flex items-center justify-center">
-              <div className="description-text-size monserrat p-10">{travelText.dBio}</div>
+              <div className="description-text-size monserrat p-10">
+                <span className="font-bold">{travelText.ddr}</span>
+                <span>{travelText.dBio}</span>
+              </div>
             </div>
           </div>
         </div>
@@ -84,7 +87,10 @@ export default function TravelSection({ travelText, travelImagesData }) {
         <div className="flex flex-wrap flex-wrap-reverse mt-10">
           <div className="lg:w-1/2 mt-10">
             <div className="h-full flex items-center justify-center">
-              <div className="description-text-size monserrat p-10">{travelText.rBio}</div>
+              <div className="description-text-size monserrat p-10">
+                <span className="font-bold">{travelText.rw}</span>
+                <span>{travelText.rBio}</span>
+              </div>
             </div>
           </div>
           <div className="w-full lg:w-1/2 mt-10">
@@ -109,6 +115,8 @@ TravelSection.propTypes = {
     description: PropTypes.string.isRequired,
     thingsCovered: PropTypes.arrayOf(PropTypes.string.isRequired),
     cost: PropTypes.arrayOf(PropTypes.string.isRequired),
+    ddr: PropTypes.string.isRequired,
+    rw: PropTypes.string.isRequired,
     dBio: PropTypes.string.isRequired,
     rBio: PropTypes.string.isRequired,
     contactUs: PropTypes.string.isRequired,

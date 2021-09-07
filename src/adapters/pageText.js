@@ -47,13 +47,13 @@ const pageText = {
           title: 'Senior Full Stack Engineer',
           time: '2021-Current',
           bulletPoints: [
-            '• Principal pod lead managing a number of developers and guiding them to understand the codebase',
+            'Principal pod lead managing a number of developers and guiding them to understand the codebase',
             'Plan the technical infrastructure of a new design system and begin its implementation into the existing codebase ',
             'Tackle new feature development while updating existing codebase to industry standards ',
           ],
         },
         {
-          company: 'UberMedia',
+          company: 'Near.co (previously UberMedia)',
           tag: 'Leading independent developer of dynamic advertising and mobile data solutions, and feature-rich mobile applications',
           title: 'Full Stack Engineer II',
           time: '2016-2021',
@@ -75,7 +75,7 @@ const pageText = {
           ],
         },
         {
-          company: 'UberMedia',
+          company: 'Near.co (previously UberMedia)',
           tag: 'Leading independent developer of dynamic advertising and mobile data solutions, and feature-rich mobile applications',
           title: 'Quality Assurance Engineer',
           time: '2014-2016',
@@ -86,7 +86,7 @@ const pageText = {
           ],
         },
         {
-          company: 'UberMedia',
+          company: 'Near.co (previously UberMedia)',
           tag: 'Leading independent developer of dynamic advertising and mobile data solutions, and feature-rich mobile applications',
           title: 'Associate Community Manager',
           time: '2011-2014',
@@ -170,8 +170,10 @@ const pageText = {
       'Perfect life? Not always. Here are some ways digital nomading can suck, so you’re prepared.',
     ],
     cost: ['$90 for 90 minutes.', 'It’s the cost of a nice date night.'],
-    dBio: 'Daniel De La Rosa has been traveling for over 6 years. After building a solid career in software development, in an office in Pasadena, California, he realized that he was in a position to do a redesign of the way he worked. He began working remotely, and shortly after he signed up to travel with the program Remote Year. After 12 months and 12 countries, there was no way he was going back to a desk. In the years that followed, Daniel developed a personal system that enabled him to continue the nomadic lifestyle while also achieving financial freedom, stability, and control.',
-    rBio: 'Rachel Whitener became successful as a professional chef in Los Angeles during her 10 years living in the city. After a trip to Morocco she saw the opportunity to travel the world and redefine herself as a digital nomad. A few months after joining Daniel, she started a new career as a Virtual Assistant and Account Manager while also teaching social media Master Classes. With a year of nomading under her belt, she has now visited 10 countries and has a growing wishlist of new places to explore.',
+    ddr: 'Daniel De La Rosa',
+    dBio: ' has been traveling for over 6 years. After building a solid career in software development, in an office in Pasadena, California, he realized that he was in a position to do a redesign of the way he worked. He began working remotely, and shortly after he signed up to travel with the program Remote Year. After 12 months and 12 countries, there was no way he was going back to a desk. In the years that followed, Daniel developed a personal system that enabled him to continue the nomadic lifestyle while also achieving financial freedom, stability, and control.',
+    rw: 'Rachel Whitener',
+    rBio: ' became successful as a professional chef in Los Angeles during her 10 years living in the city. After a trip to Morocco she saw the opportunity to travel the world and redefine herself as a digital nomad. A few months after joining Daniel, she started a new career as a Virtual Assistant and Account Manager while also teaching social media Master Classes. With a year of nomading under her belt, she has now visited 10 countries and has a growing wishlist of new places to explore.',
     contactUs: 'contact us',
   },
   contactButton: {

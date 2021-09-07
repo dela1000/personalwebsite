@@ -20,9 +20,8 @@ export default function Projects({ windowType }) {
       />
       <CenterContainer>
         {projects.map((project) => (
-          <div className="mb-5">
+          <div className="mb-5" key={project.header}>
             <TextSection
-              key={project.header}
               text={project.header}
               description={project.description}
               developed={project.developed}
@@ -35,6 +34,7 @@ export default function Projects({ windowType }) {
         imageLink={largeImagesData[windowType].albaiuliabw}
         primaryText={pageText.projects.bottomHero.primaryText}
         secondaryText={pageText.projects.bottomHero.secondaryText}
+        contactText={pageText.contactButton.contactMe}
         windowType={windowType}
       />
     </div>

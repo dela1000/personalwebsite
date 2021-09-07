@@ -26,6 +26,7 @@ export default function About({ windowType }) {
         imageLink={largeImagesData[windowType].barcelonabw}
         primaryText={pageText.about.topHero.primaryText}
         secondaryText={pageText.about.topHero.secondaryText}
+        contactText={pageText.contactButton.contactMe}
         windowType={windowType}
       />
     </div>

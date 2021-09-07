@@ -9,7 +9,7 @@ export default function BottomHero({
   contactText,
 }) {
   return (
-    <div className="relative w-full">
+    <div id="contact" className="relative w-full z-0">
       <div className="absolute center w-full" style={{ height: '100%' }}>
         <div className="w-full text-center px-12 white-font">
           <div className={`${windowType}-secondary-text garamond my-5`}>{secondaryText}</div>

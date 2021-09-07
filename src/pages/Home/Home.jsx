@@ -27,6 +27,7 @@ export default function Home({ windowType }) {
         imageLink={largeImagesData[windowType].halongbaybw}
         primaryText={pageText.home.bottomHero.primaryText}
         secondaryText={pageText.home.bottomHero.secondaryText}
+        contactText={pageText.contactButton.contactMe}
         windowType={windowType}
       />
     </div>

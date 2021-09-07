@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <header
       id="header"
-      className={`${themeName}-header w-screen items-center py-7 px-5 flex justify-around`}
+      className={`${themeName}-header w-screen items-center py-7 px-5 flex justify-around sticky top-0 z-50`}
     >
       <div className={` ${themeName}-nav-circle nav-circle`}>
         <div className="pt-1.5 garamond text-3xl italic">D</div>

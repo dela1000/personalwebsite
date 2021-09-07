@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
 
 .app {
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.5;
   color: var(--color-fg);
   background-color: var(--color-bg);
 }
@@ -38,7 +36,7 @@ main {
 
 .link {
   color: var(--color-primary);
-  padding: 0 0 0.3em 0;
+  padding-bottom: 0.3em;
   position: relative;
 }
 
