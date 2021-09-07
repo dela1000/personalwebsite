@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 const Context = createContext();
 
 const Provider = ({ children }) => {
-  const [themeName, setThemeName] = useState('light');
+  const [themeName, setThemeName] = useState('dark');
   const [navbarState, setNavbarState] = useState(false);
 
   useEffect(() => {
-    const isDark = localStorage.getItem('themeName') === 'dark';
-    if (isDark) setThemeName('dark');
+    const isDark = localStorage.getItem('themeName') === 'light';
+    if (isDark) setThemeName('light');
   }, []);
 
   const toggleTheme = () => {

@@ -2,11 +2,26 @@ import PropTypes from 'prop-types';
 
 export default function ProjectImagesSection({ imagesObj }) {
   return (
-    <div className="flex align-center">
-      <div className="h-full lg:flex mx-auto block">
-        <img className="block p-4 max-w-xs" src={imagesObj.firstImage} alt="First" />
-        <img className="block p-4 max-w-xs" src={imagesObj.secondImage} alt="second" />
-        <img className="block p-4 max-w-xs" src={imagesObj.thirdImage} alt="third" />
+    <div>
+      <div className="flex items-center justify-center image-transition-wrap">
+        <img className="p-4 max-w-xs image-transition" src={imagesObj.firstImage} alt="First" />
+      </div>
+      <div className="flex flex-wrap flex-wrap-reverse">
+        <div className="w-full lg:w-1/2 mt-10">
+          <div className="flex items-center justify-center image-transition-wrap">
+            <img
+              className="p-4 max-w-xs image-transition"
+              src={imagesObj.secondImage}
+              alt="second"
+            />
+          </div>
+        </div>
+        <div className="w-full lg:w-1/2 mt-10">
+          <div className="h-full flex items-center justify-center image-transition-wrap">
+            {' '}
+            <img className="p-4 max-w-xs image-transition" src={imagesObj.thirdImage} alt="third" />
+          </div>
+        </div>
       </div>
     </div>
   );

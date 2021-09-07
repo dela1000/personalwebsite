@@ -179,7 +179,7 @@ main {
 }
 
 .center-container-padding {
-  padding: 9rem 10rem 9rem 10rem;
+  padding: 9rem 20rem 9rem 20rem;
 }
 
 @media (max-width: 800px) {
@@ -189,11 +189,11 @@ main {
 }
 
 .fade-in {
-  -webkit-animation: fadein 3s;
-  -moz-animation: fadein 3s;
-  -ms-animation: fadein 3s;
-  -o-animation: fadein 3s;
-  animation: fadein 3s;
+  -webkit-animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  -ms-animation: fadein 1s;
+  -o-animation: fadein 1s;
+  animation: fadein 1s;
 }
 
 @keyframes fadein {
@@ -243,4 +243,12 @@ main {
   to {
     opacity: 1;
   }
+}
+
+.image-transition-wrap:hover .image-transition {
+  transform: translateY(-7px);
+}
+
+.image-transition {
+  transition: all 300ms;
 }

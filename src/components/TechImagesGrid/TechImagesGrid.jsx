@@ -4,9 +4,12 @@ export default function TechImagesGrid({ imagesData }) {
   return (
     <div className="flex flex-wrap my-8 -mx-8">
       {imagesData.map((imageData) => (
-        <div key={imageData.name} className="mb-4 px-8 w-1/2 md:w-1/3 lg:w-1/6">
+        <div
+          key={imageData.name}
+          className="mb-4 px-8 w-1/2 md:w-1/3 lg:w-1/6 image-transition-wrap"
+        >
           <img
-            className="block h-auto w-full sepia mt-4"
+            className="block h-auto w-full sepia mt-4 image-transition"
             src={imageData.img}
             alt={imageData.name}
           />

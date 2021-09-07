@@ -43,9 +43,9 @@ export default function TravelSection({ travelText, travelImagesData }) {
               </ul>
             </div>
             <div className="lg:w-1/2">
-              <div className="flex items-center justify-center">
+              <div className="flex items-center justify-center image-transition-wrap">
                 <img
-                  className="sepia"
+                  className="sepia image-transition"
                   src={travelImagesData.athens}
                   alt={travelImagesData.athens}
                 />
@@ -64,11 +64,12 @@ export default function TravelSection({ travelText, travelImagesData }) {
           themeName === 'dark' ? 'bg-gray-400' : 'bg-gray-300'
         } center-container-padding`}
       >
+        <TextSection text="Who are we" />
         <div className="flex flex-wrap">
           <div className="w-full lg:w-1/2 mt-10">
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center image-transition-wrap">
               <img
-                className="sepia w-96"
+                className="sepia w-96 image-transition"
                 src={travelImagesData.danielIreland}
                 alt={travelImagesData.danielIreland}
               />
@@ -87,16 +88,16 @@ export default function TravelSection({ travelText, travelImagesData }) {
         <div className="flex flex-wrap flex-wrap-reverse mt-10">
           <div className="lg:w-1/2 mt-10">
             <div className="h-full flex items-center justify-center">
-              <div className="description-text-size monserrat p-10">
+              <div className="description-text-size monserrat p-10 text-right">
                 <span className="font-bold">{travelText.rw}</span>
                 <span>{travelText.rBio}</span>
               </div>
             </div>
           </div>
           <div className="w-full lg:w-1/2 mt-10">
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center image-transition-wrap">
               <img
-                className="sepia w-96"
+                className="sepia w-96 image-transition"
                 src={travelImagesData.RachelMorocco}
                 alt={travelImagesData.RachelMorocco}
               />
