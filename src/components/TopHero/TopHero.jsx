@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 
 export default function TopHero({ imageLink, primaryText, secondaryText, windowType }) {
+  const [loaded, setLoaded] = useState(false);
+
   return (
     <div className="relative z-0">
       <div className="absolute center w-full" style={{ height: '100%' }}>
@@ -9,10 +12,20 @@ export default function TopHero({ imageLink, primaryText, secondaryText, windowT
           <div className={`${windowType}-secondary-text garamond my-5`}>{secondaryText}</div>
         </div>
       </div>
+      {loaded ? null : (
+        <div
+          style={{
+            height: '100%',
+            width: '100%',
+          }}
+        />
+      )}
       <img
+        alt="Top Hero"
         className="hero-image-height w-full object-cover image-darkness"
         src={imageLink}
-        alt="Top Hero"
+        style={loaded ? {} : { display: 'none' }}
+        onLoad={() => setLoaded(true)}
       />
     </div>
   );

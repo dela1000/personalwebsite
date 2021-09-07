@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 import ContactButton from '../ContactButton/index';
 
@@ -8,6 +9,7 @@ export default function BottomHero({
   windowType,
   contactText,
 }) {
+  const [loaded, setLoaded] = useState(false);
   return (
     <div id="contact" className="relative w-full z-0">
       <div className="absolute center w-full" style={{ height: '100%' }}>
@@ -17,10 +19,20 @@ export default function BottomHero({
           <ContactButton text={contactText} />
         </div>
       </div>
+      {loaded ? null : (
+        <div
+          style={{
+            height: '100%',
+            width: '100%',
+          }}
+        />
+      )}
       <img
+        alt="Bottom Hero"
         className="hero-image-height w-full object-cover image-darkness"
         src={imageLink}
-        alt="Bottom Hero"
+        style={loaded ? {} : { display: 'none' }}
+        onLoad={() => setLoaded(true)}
       />
     </div>
   );
