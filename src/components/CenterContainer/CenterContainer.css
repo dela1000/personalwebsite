@@ -1,9 +1,0 @@
-.center-container-padding {
-  padding: 14rem 10rem 14rem 10rem;
-}
-
-@media (max-width: 800px) {
-  .center-container-padding {
-    padding: 6rem 4rem 6rem 4rem;
-  }
-}

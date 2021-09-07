@@ -1,6 +1,7 @@
+import PropTypes from 'prop-types';
 import pageText from '../../adapters/pageText';
 
-export default function ContactButton() {
+export default function ContactButton({ text }) {
   if (!pageText.contactButton.contactEmail) return null;
   return (
     <a
@@ -8,9 +9,17 @@ export default function ContactButton() {
       target="_blank"
       rel="noreferrer"
     >
-      <button id="contact" type="button" className="btn btn--outline">
-        {pageText.contactButton.contactMe}
+      <button id="contact" type="button" className="btn btn--outline uppercase">
+        {text}
       </button>
     </a>
   );
 }
+
+ContactButton.propTypes = {
+  text: PropTypes.string,
+};
+
+ContactButton.defaultProps = {
+  text: pageText.contactButton.contactMe,
+};

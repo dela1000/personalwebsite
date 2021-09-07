@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import './TextSection.css';
 
 export default function TextSection({ name, text, description, developed }) {
   return (
@@ -15,11 +14,12 @@ export default function TextSection({ name, text, description, developed }) {
 TextSection.propTypes = {
   name: PropTypes.string,
   text: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  description: PropTypes.string,
   developed: PropTypes.string,
 };
 
 TextSection.defaultProps = {
   name: '',
+  description: '',
   developed: '',
 };

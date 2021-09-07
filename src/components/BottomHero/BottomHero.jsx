@@ -1,14 +1,20 @@
 import PropTypes from 'prop-types';
 import ContactButton from '../ContactButton/index';
 
-export default function BottomHero({ imageLink, primaryText, secondaryText, windowType }) {
+export default function BottomHero({
+  imageLink,
+  primaryText,
+  secondaryText,
+  windowType,
+  contactText,
+}) {
   return (
     <div className="relative w-full">
       <div className="absolute center w-full" style={{ height: '100%' }}>
         <div className="w-full text-center px-12 white-font">
           <div className={`${windowType}-secondary-text garamond my-5`}>{secondaryText}</div>
           <div className={`${windowType}-primary-text monserrat my-5`}>{primaryText}</div>
-          <ContactButton />
+          <ContactButton text={contactText} />
         </div>
       </div>
       <img
@@ -23,6 +29,12 @@ export default function BottomHero({ imageLink, primaryText, secondaryText, wind
 BottomHero.propTypes = {
   imageLink: PropTypes.string.isRequired,
   primaryText: PropTypes.string.isRequired,
-  secondaryText: PropTypes.string.isRequired,
+  secondaryText: PropTypes.string,
   windowType: PropTypes.string.isRequired,
+  contactText: PropTypes.string,
+};
+
+BottomHero.defaultProps = {
+  secondaryText: '',
+  contactText: null,
 };

@@ -144,6 +144,36 @@ const pageText = {
       yearsinTech * 2
     } years and guitar for ${yearsinTech}, ran the 2009 Los Angeles Marathon and a number of half-marathons, learned development with HackReactor, became a digital nomad in 2017 with Remote Year and have continued to travel the world visiting over 35 countries carrying a ukulele.`,
   },
+  travel: {
+    topHero: {
+      primaryText: 'DEVIATE. DESIGN. DEPART.',
+      secondaryText: 'Travel the world while "working from home".',
+    },
+    bottomHero: {
+      primaryText: 'BEGIN YOUR WORK FROM HOME TRAVEL LIFE',
+    },
+    header: 'Curious about the digital nomad life?',
+    travelPoints: [
+      'Ready to deviate from the office life?',
+      'Have you read The 4-Hour Workweek and thought to yourself, YES.',
+      'Desire to achieve location independence but don’t know where to start?',
+      'We are seasoned digital nomads, and we can help.',
+    ],
+    description:
+      'You can spend hours, days, combing through digital nomad blogs, and get tons of info. We don’t know everything, and we haven’t invented the lifestyle, but how often can you have a one-on-one conversation in real time with someone who is actually doing this? We’ll share with you our personal journeys from being location-bound, stuff-bound, and not at all mobile, to eating cevapi in Bosnia, hiking Table Mountain in South Africa, taking care of chickens in Ireland, and many more experiences. What we do day to day, how we make decisions about where to go, how we manage money, how we cope with stuff, with lack of stuff, the incredible experiences, the level-3 fun, the moving, the loneliness, the languages, the newness...',
+    thingsCovered: [
+      'Prioritizing your priorities: Wifi, Safety, Fun. And more. Balancing the reckless fun with the adulting.',
+      'Is digital nomading affordable? Extremely.',
+      'Visas & the Beast: Schengen Zone.',
+      'Build your tribe: how to keep a social life while on the road.',
+      'MONEY & Tools.',
+      'Perfect life? Not always. Here are some ways digital nomading can suck, so you’re prepared.',
+    ],
+    cost: ['$90 for 90 minutes.', 'It’s the cost of a nice date night.'],
+    dBio: 'Daniel De La Rosa has been traveling for over 6 years. After building a solid career in software development, in an office in Pasadena, California, he realized that he was in a position to do a redesign of the way he worked. He began working remotely, and shortly after he signed up to travel with the program Remote Year. After 12 months and 12 countries, there was no way he was going back to a desk. In the years that followed, Daniel developed a personal system that enabled him to continue the nomadic lifestyle while also achieving financial freedom, stability, and control.',
+    rBio: 'Rachel Whitener became successful as a professional chef in Los Angeles during her 10 years living in the city. After a trip to Morocco she saw the opportunity to travel the world and redefine herself as a digital nomad. A few months after joining Daniel, she started a new career as a Virtual Assistant and Account Manager while also teaching social media Master Classes. With a year of nomading under her belt, she has now visited 10 countries and has a growing wishlist of new places to explore.',
+    contactUs: 'contact us',
+  },
   contactButton: {
     contactMe: 'CONTACT ME',
     contactEmail: 'dela1000@gmail.com',
