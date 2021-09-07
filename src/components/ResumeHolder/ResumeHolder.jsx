@@ -8,13 +8,13 @@ export default function ResumeHolder({ resumeData }) {
   return (
     <div className={themeName === 'dark' ? 'bg-gray-400' : 'bg-gray-300'}>
       <div className="px-20 lg:px-96 py-32 text-gray-600">
-        <div className="garamond font-size-largest font-weight-medium text-2xl">
+        <div className="garamond font-size-largest font-weight-medium text-4xl">
           Relevant Experience
         </div>
         <div className="mt-4">
           {resumeData.experience.map((item) => (
             <div className="my-4" key={item.title}>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4 text-xl">
                 <div>{item.company}</div>
                 <div className="text-right">
                   <div>{item.time}</div>
@@ -32,12 +32,12 @@ export default function ResumeHolder({ resumeData }) {
             </div>
           ))}
         </div>
-        <div className="garamond font-size-largest font-weight-medium text-2xl mt-10">
+        <div className="garamond font-size-largest font-weight-medium text-4xl mt-10">
           Education
         </div>
         <div className="mt-4">
           {resumeData.education.map((item) => (
-            <div className="grid grid-cols-2 mb-4 gap-1" key={item.degree}>
+            <div className="grid grid-cols-2 mb-4 gap-1 text-xl" key={item.degree}>
               <div>{item.school}</div>
               <div className="text-right">
                 <div>{item.time}</div>

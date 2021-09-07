@@ -116,6 +116,20 @@ const pageText = {
       ],
     },
   },
+  tech: {
+    topHero: {
+      primaryText: 'CONCEIVE. COMPOSE. CREATE.',
+      secondaryText: 'The tools of my trade',
+    },
+    bottomHero: {
+      primaryText: 'GET YOUR WEB PROJECT STARTED TODAY',
+      secondaryText:
+        'With expertise on these technologies your website will be exactly as you desire.',
+    },
+    header: 'Creating what you want with the right tools',
+    description:
+      'Wielding a variety of technologies and support properties, website design and development becomes easier. Below is a condensed list of the technologies which will make your online presence be clear and concise.',
+  },
   contactButton: {
     contactMe: 'CONTACT ME',
     contactEmail: 'dela1000@gmail.com',
