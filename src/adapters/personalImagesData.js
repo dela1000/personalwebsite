@@ -8,14 +8,14 @@ import sa from '../assets/photos/sa.jpg';
 import thailand from '../assets/photos/thailand.jpg';
 
 const personalImagesData = [
-  { img: running, name: 'running' },
-  { img: guell, name: 'guell' },
-  { img: lennon, name: 'lennon' },
-  { img: osaka, name: 'osaka' },
-  { img: krka, name: 'krka' },
-  { img: sa, name: 'sa' },
-  { img: thailand, name: 'thailand' },
-  { img: dog, name: 'dog' },
+  { img: running, name: 'Sofia, Bulgaria' },
+  { img: guell, name: 'Barcelona, Spain' },
+  { img: lennon, name: 'Prague, Czechia' },
+  { img: osaka, name: 'Osaka, Japan' },
+  { img: krka, name: 'Krka, Croatia' },
+  { img: sa, name: 'Cape Town, South Africa' },
+  { img: thailand, name: 'Doi Inthanon, Thailand' },
+  { img: dog, name: 'Weston, Florida' },
 ];
 
 export default personalImagesData;

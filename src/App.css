@@ -178,7 +178,7 @@ main {
     font-size: 1.5rem;
   }
   .sub-header-text-size {
-    font-size: 1rem;
+    font-size: 2rem;
   }
   .description-text-size {
     font-size: 1rem;
@@ -189,15 +189,17 @@ main {
   padding: 9rem 20rem 9rem 20rem;
 }
 
-@media (max-width: 768px) {
-  .center-container-padding {
-    padding: 3rem 4rem 3rem 4rem;
-  }
+.resume-container-padding {
+  padding: 9rem 22rem 9rem 22rem;
 }
 
 @media (max-width: 1280px) {
   .center-container-padding {
-    padding: 6rem 12rem 6rem 12rem;
+    padding: 3rem 4rem 3rem 4rem;
+  }
+
+  .resume-container-padding {
+    padding: 3rem 6rem 3rem 6rem;
   }
 }
 

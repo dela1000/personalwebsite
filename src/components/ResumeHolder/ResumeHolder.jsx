@@ -7,7 +7,7 @@ export default function ResumeHolder({ resumeData }) {
   const [{ themeName }] = useContext(Context);
   return (
     <div className={themeName === 'dark' ? 'bg-gray-400' : 'bg-gray-300'}>
-      <div className="px-20 lg:px-96 pt-32 pb-16 text-gray-600">
+      <div className="resume-container-padding text-gray-600">
         <div className="garamond font-size-largest font-weight-medium text-4xl">
           Relevant Experience
         </div>
@@ -37,12 +37,14 @@ export default function ResumeHolder({ resumeData }) {
         </div>
         <div className="mt-4">
           {resumeData.education.map((item) => (
-            <div className="grid grid-cols-2 mb-4 gap-1 text-xl" key={item.degree}>
-              <div>{item.school}</div>
-              <div className="text-right">
+            <div className="grid grid-cols-10 mb-4 gap-1 text-xl" key={item.degree}>
+              <div className="col-span-6">{item.school}</div>
+              <div className="col-span-4 text-right">
                 <div>{item.time}</div>
               </div>
-              <div className="margin-top-small text-sm font-light italic">{item.degree}</div>
+              <div className="col-span-10 margin-top-small text-sm font-light italic">
+                {item.degree}
+              </div>
             </div>
           ))}
         </div>

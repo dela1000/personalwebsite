@@ -12,18 +12,18 @@ import flutter from '../assets/logos/flutter.png';
 import grunt from '../assets/logos/grunt.png';
 
 const techImagesData = [
-  { img: react, name: 'react' },
-  { img: node, name: 'node' },
-  { img: aws, name: 'aws' },
+  { img: react, name: 'React' },
+  { img: node, name: 'Node' },
+  { img: aws, name: 'AWS' },
   { img: git, name: 'git' },
-  { img: html, name: 'html' },
-  { img: css, name: 'css' },
-  { img: angular, name: 'angular' },
-  { img: adobe, name: 'adobe' },
-  { img: ionic, name: 'ionic' },
-  { img: flutter, name: 'flutter' },
-  { img: grunt, name: 'grunt' },
-  { img: bootstrap, name: 'bootstrap' },
+  { img: html, name: 'HTML' },
+  { img: css, name: 'CSS' },
+  { img: angular, name: 'Angular' },
+  { img: adobe, name: 'Adobe' },
+  { img: ionic, name: 'Ionic' },
+  { img: flutter, name: 'Flutter' },
+  { img: grunt, name: 'Grunt' },
+  { img: bootstrap, name: 'Bootstrap' },
 ];
 
 export default techImagesData;

@@ -32,7 +32,7 @@ export default function Navbar() {
 
   return (
     <nav className="center">
-      <ul
+      <div
         style={{ display: navbarState ? 'flex' : null }}
         className={
           navbarState
@@ -41,7 +41,7 @@ export default function Navbar() {
         }
       >
         {navList.map((navOption) => (
-          <li key={navOption} className="nav-list-item monserrat link link-nav">
+          <div key={navOption} className="nav-list-item monserrat link link-nav">
             <button
               className="uppercase"
               type="button"
@@ -52,10 +52,10 @@ export default function Navbar() {
             >
               {navOption}
             </button>
-          </li>
+          </div>
         ))}
 
-        <li className="nav-list-item monserrat link link-nav">
+        <div className="nav-list-item monserrat link link-nav">
           <a href="#contact">
             <button
               className="uppercase"
@@ -67,8 +67,8 @@ export default function Navbar() {
               contact
             </button>
           </a>
-        </li>
-      </ul>
+        </div>
+      </div>
 
       <button
         type="button"

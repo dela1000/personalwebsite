@@ -15,14 +15,14 @@ const travelImagesData = {
   athens,
   danielIreland,
   gridPhotos: [
-    { img: rndflorence, name: 'rndflorence' },
-    { img: dubrovnik, name: 'dubrovnik' },
-    { img: rndtbilisi, name: 'rndtbilisi' },
-    { img: vienna, name: 'vienna' },
-    { img: bokaap, name: 'bokaap' },
-    { img: rndsarajevo, name: 'rndsarajevo' },
-    { img: dublin, name: 'dublin' },
-    { img: rndsafari, name: 'rndsafari' },
+    { img: rndflorence, name: 'Florence, Italy' },
+    { img: dubrovnik, name: 'Dubrovnik, Croatia' },
+    { img: rndtbilisi, name: 'Tbilisi, Georgia' },
+    { img: vienna, name: 'Vienna, Austria' },
+    { img: bokaap, name: 'Cape Town, South Africa' },
+    { img: rndsarajevo, name: 'Sarajevo, Bosnia and Herzegovina' },
+    { img: dublin, name: 'Dublin, Ireland' },
+    { img: rndsafari, name: 'Manyeleti, South Africa' },
   ],
 };
 

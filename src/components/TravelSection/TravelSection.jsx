@@ -17,7 +17,9 @@ export default function TravelSection({ travelText, travelImagesData }) {
         <div className="description-text-size monserrat">
           <ul className=" mb-10">
             {travelText.travelPoints.map((point) => (
-              <li key={point}>{point}</li>
+              <li className="my-2" key={point}>
+                - {point}
+              </li>
             ))}
           </ul>
 
