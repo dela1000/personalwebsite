@@ -6,7 +6,12 @@ export default function PersonalImagesGrid({ imagesData }) {
       <div className="flex flex-wrap">
         {imagesData.map((imageData) => (
           <div key={imageData.name} className="w-1/2 md:w-1/4">
-            <img className="block h-auto w-full sepia" src={imageData.img} alt={imageData.name} />
+            <img
+              className="block h-auto w-full sepia"
+              src={imageData.img}
+              alt={imageData.name}
+              title={imageData.name}
+            />
           </div>
         ))}
       </div>
