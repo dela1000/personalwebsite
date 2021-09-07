@@ -130,6 +130,20 @@ const pageText = {
     description:
       'Wielding a variety of technologies and support properties, website design and development becomes easier. Below is a condensed list of the technologies which will make your online presence be clear and concise.',
   },
+  about: {
+    topHero: {
+      primaryText: 'PASSION. PERSONALITY. PERSPECTIVE.',
+      secondaryText: 'Learn a bit more about who I am away from my laptop.',
+    },
+    bottomHero: {
+      primaryText: 'HIRE A FULL-STACK ENGINEER TODAY',
+      secondaryText: 'Do you have a website idea and need help from an expert?',
+    },
+    header: 'Fun Facts',
+    description: `I am an avid partner-acrobatics certified educator, I have played drums for over ${
+      yearsinTech * 2
+    } years and guitar for ${yearsinTech}, ran the 2009 Los Angeles Marathon and a number of half-marathons, learned development with HackReactor, became a digital nomad in 2017 with Remote Year and have continued to travel the world visiting over 35 countries carrying a ukulele.`,
+  },
   contactButton: {
     contactMe: 'CONTACT ME',
     contactEmail: 'dela1000@gmail.com',
