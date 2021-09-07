@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import TopHero from '../../components/TopHero/index';
 import BottomHero from '../../components/BottomHero/index';
@@ -10,8 +10,12 @@ import projects from '../../adapters/projects';
 import pageText from '../../adapters/pageText';
 
 export default function Projects({ windowType }) {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
   return (
-    <div>
+    <div className="fade-in">
       <TopHero
         imageLink={largeImagesData[windowType].acropolisbw}
         primaryText={pageText.projects.topHero.primaryText}

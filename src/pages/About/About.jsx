@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import TopHero from '../../components/TopHero/index';
 import BottomHero from '../../components/BottomHero/index';
@@ -10,8 +10,12 @@ import pageText from '../../adapters/pageText';
 import personalImagesData from '../../adapters/personalImagesData';
 
 export default function About({ windowType }) {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
   return (
-    <div>
+    <div className="fade-in">
       <TopHero
         imageLink={largeImagesData[windowType].eterabw}
         primaryText={pageText.about.topHero.primaryText}

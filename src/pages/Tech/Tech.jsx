@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import TopHero from '../../components/TopHero/index';
 import CenterContainer from '../../components/CenterContainer/index';
@@ -10,8 +10,12 @@ import pageText from '../../adapters/pageText';
 import techImagesData from '../../adapters/techImagesData';
 
 export default function Tech({ windowType }) {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
   return (
-    <div>
+    <div className="fade-in">
       <TopHero
         imageLink={largeImagesData[windowType].praguebw}
         primaryText={pageText.tech.topHero.primaryText}

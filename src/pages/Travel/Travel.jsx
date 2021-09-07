@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import TopHero from '../../components/TopHero/index';
 import BottomHero from '../../components/BottomHero/index';
@@ -9,8 +9,12 @@ import pageText from '../../adapters/pageText';
 import travelImagesData from '../../adapters/travelImagesData';
 
 export default function Travel({ windowType }) {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
   return (
-    <div>
+    <div className="fade-in">
       <TopHero
         imageLink={largeImagesData[windowType].benchbw}
         primaryText={pageText.travel.topHero.primaryText}
