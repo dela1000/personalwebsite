@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import PropTypes from 'prop-types';
 import { Context } from '../../contexts/context';
-import resumeFile from '../../assets/DanielDeLaRosa_Resume_2021_full.pdf';
+import resumeFile from '../../assets/DanielDeLaRosa_Resume_2022_full.pdf';
 
 export default function ResumeHolder({ resumeData }) {
   const [{ themeName }] = useContext(Context);
@@ -13,7 +13,7 @@ export default function ResumeHolder({ resumeData }) {
         </div>
         <div className="mt-4">
           {resumeData.experience.map((item) => (
-            <div className="my-4" key={item.title}>
+            <div className="my-4" key={`${item.title}_${item.time}`}>
               <div className="grid grid-cols-2 gap-4 text-xl">
                 <div>{item.company}</div>
                 <div className="text-right">

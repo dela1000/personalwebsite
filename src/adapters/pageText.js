@@ -42,14 +42,25 @@ const pageText = {
     resumeData: {
       experience: [
         {
+          company: 'Cents',
+          tag: 'Bringing laundry services to the 21st century, all-in-one platform to grow your laundry business.',
+          title: 'Senior Full Stack Engineer',
+          time: '2021-2022',
+          bulletPoints: [
+            'Plan and implement the development of version 2.0 of our main mobile and web based applications',
+            'Guide junior developers in understanding and implement features into the codebase',
+            'Development of full stack features for our multiple mobile and web applications',
+          ],
+        },
+        {
           company: 'WeSpire',
           tag: 'Empower companies to design, run, and measure employee experience programs to improve social, environmental, and business outcomes.',
           title: 'Senior Full Stack Engineer',
-          time: '2021-Current',
+          time: '2021-2021',
           bulletPoints: [
             'Principal pod lead managing a number of developers and guiding them to understand the codebase',
-            'Plan the technical infrastructure of a new design system and begin its implementation into the existing codebase ',
-            'Tackle new feature development while updating existing codebase to industry standards ',
+            'Plan the technical infrastructure of a new design system and begin its implementation into the existing codebase',
+            'Tackle new feature development while updating existing codebase to industry standards',
           ],
         },
         {
