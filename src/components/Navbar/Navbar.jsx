@@ -26,7 +26,6 @@ export default function Navbar() {
 
   const toggleNavList = () => toggleNavbar(!navbarState);
   const closeNavList = () => toggleNavbar(false);
-
   const navigate = (navigateTo) => {
     if (location.pathname === '/' && navigateTo === 'home') {
       return;
@@ -47,7 +46,15 @@ export default function Navbar() {
         }
       >
         {navList.map((navOption) => (
-          <div key={navOption} className="nav-list-item monserrat link link-nav">
+          <div
+            key={navOption}
+            className={`nav-list-item monserrat link-nav ${
+              location?.pathname?.substring(1) === navOption ||
+              (location?.pathname === '/' && navOption === 'home')
+                ? 'currentLocationLink'
+                : 'link'
+            }`}
+          >
             <button
               className="uppercase"
               type="button"

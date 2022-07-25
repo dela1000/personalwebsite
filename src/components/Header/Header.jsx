@@ -7,7 +7,6 @@ import './Header.css';
 export default function Header() {
   const history = useHistory();
   const location = useLocation();
-  console.log(location.pathname);
   const [{ themeName }] = useContext(Context);
 
   const navigateHome = () => {
