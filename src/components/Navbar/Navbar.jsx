@@ -1,5 +1,5 @@
 import { useContext, useState, useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router-dom';
 import BrightnessHighIcon from '@material-ui/icons/BrightnessHigh';
 import BrightnessLowIcon from '@material-ui/icons/BrightnessLow';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -14,6 +14,7 @@ export default function Navbar() {
   const { width } = useWindowDimensions();
   const [currentWidth, setCurrentWidth] = useState(0);
   const history = useHistory();
+  const location = useLocation();
   const [{ themeName, toggleTheme, navbarState, toggleNavbar }] = useContext(Context);
 
   useEffect(() => {
@@ -27,7 +28,12 @@ export default function Navbar() {
   const closeNavList = () => toggleNavbar(false);
 
   const navigate = (navigateTo) => {
-    history.push(`/${navigateTo}`);
+    if (location.pathname === '/' && navigateTo === 'home') {
+      return;
+    }
+    if (location.pathname !== navigateTo.substring(1)) {
+      history.push(`/${navigateTo}`);
+    }
   };
 
   return (
