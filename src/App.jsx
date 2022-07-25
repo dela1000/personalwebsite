@@ -1,18 +1,18 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
-import Header from './components/Header/index';
-import Footer from './components/Footer/index';
-import ScrollToTop from './components/ScrollToTop/index';
-import Home from './pages/Home/index';
-import Resume from './pages/Resume/index';
-import Tech from './pages/Tech/index';
-import About from './pages/About/index';
-import Travel from './pages/Travel/index';
-import Projects from './pages/Projects/index';
-import { Context } from './contexts/context';
-import useWindowDimensions from './contexts/useWindowDimensions';
-import './tailwind.css';
-import './App.css';
+import Header from 'components/Header';
+import Footer from 'components/Footer';
+import ScrollToTop from 'components/ScrollToTop';
+import Home from 'pages/Home';
+import Resume from 'pages/Resume';
+import Tech from 'pages/Tech';
+import About from 'pages/About';
+import Travel from 'pages/Travel';
+import Projects from 'pages/Projects';
+import { Context } from 'contexts/context';
+import useWindowDimensions from 'contexts/useWindowDimensions';
+import 'tailwind.css';
+import 'App.css';
 
 export default function App() {
   const [{ themeName, navbarState }] = useContext(Context);
