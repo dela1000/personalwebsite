@@ -1,7 +1,8 @@
 import moment from 'moment';
 
-const yearsAsDev = moment().diff('2015-01-01', 'years', false);
 const yearsinTech = moment().diff('2011-01-01', 'years', false);
+const yearsAsDev = moment().diff('2015-01-01', 'years', false);
+const travelYears = moment().diff('2016-04-01', 'years', false);
 const currentYear = moment().format('YYYY');
 
 const pageText = {
@@ -153,7 +154,7 @@ const pageText = {
     header: 'Fun Facts',
     description: `I am an avid partner-acrobatics certified educator, I have played drums for over ${
       yearsinTech * 2
-    } years and guitar for ${yearsinTech}, ran the 2009 Los Angeles Marathon and a number of half-marathons, learned development with HackReactor, became a digital nomad in 2017 with Remote Year and have continued to travel the world visiting over 35 countries carrying a ukulele.`,
+    } years and guitar for ${yearsinTech}, ran the 2009 Los Angeles Marathon and a number of half-marathons, learned development with HackReactor, became a digital nomad in 2017 with Remote Year and have continued to travel the world for the last ${travelYears} years visiting over 35 countries carrying a ukulele.`,
   },
   travel: {
     topHero: {
@@ -195,7 +196,7 @@ const pageText = {
     header: 'Create beautiful, responsive, and interactive websites exactly as you want them.',
     top: `© ${currentYear} Daniel De La Rosa. All rights reserved.`,
     middle: 'All photos by Daniel De La Rosa.',
-    bottom: 'Developed with React and deployed to Netlify.',
+    bottom: 'Developed with React and TailwindCSS, and deployed to Netlify.',
   },
 };
 
