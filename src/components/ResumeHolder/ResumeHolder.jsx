@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import PropTypes from 'prop-types';
-import { Context } from '../../contexts/context';
-import resumeFile from '../../assets/DanielDeLaRosa_Resume_2022_full.pdf';
+import { Context } from 'contexts/context';
+import resumeFile from 'assets/DanielDeLaRosa_Resume_2022_full.pdf';
 
 export default function ResumeHolder({ resumeData }) {
   const [{ themeName }] = useContext(Context);

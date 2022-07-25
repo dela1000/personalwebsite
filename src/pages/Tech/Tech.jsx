@@ -1,12 +1,12 @@
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import CenterContainer from '../../components/CenterContainer/index';
-import TextSection from '../../components/TextSection/index';
-import TechImagesGrid from '../../components/TechImagesGrid/index';
-import Hero from '../../components/Hero/index';
-import largeImagesData from '../../adapters/largeImagesData';
-import pageText from '../../adapters/pageText';
-import techImagesData from '../../adapters/techImagesData';
+import CenterContainer from 'components/CenterContainer';
+import TextSection from 'components/TextSection';
+import TechImagesGrid from 'components/TechImagesGrid';
+import Hero from 'components/Hero';
+import largeImagesData from 'adapters/largeImagesData';
+import pageText from 'adapters/pageText';
+import techImagesData from 'adapters/techImagesData';
 
 export default function Tech({ windowType }) {
   useEffect(() => {

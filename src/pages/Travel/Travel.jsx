@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import Hero from '../../components/Hero/index';
-import TravelSection from '../../components/TravelSection/index';
-import PersonalImagesGrid from '../../components/PersonalImagesGrid/index';
-import largeImagesData from '../../adapters/largeImagesData';
-import pageText from '../../adapters/pageText';
-import travelImagesData from '../../adapters/travelImagesData';
+import Hero from 'components/Hero';
+import TravelSection from 'components/TravelSection';
+import PersonalImagesGrid from 'components/PersonalImagesGrid';
+import largeImagesData from 'adapters/largeImagesData';
+import pageText from 'adapters/pageText';
+import travelImagesData from 'adapters/travelImagesData';
 
 export default function Travel({ windowType }) {
   useEffect(() => {

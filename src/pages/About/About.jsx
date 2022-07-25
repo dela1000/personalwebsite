@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 
-import Hero from '../../components/Hero/index';
-import CenterContainer from '../../components/CenterContainer/index';
-import TextSection from '../../components/TextSection/index';
-import PersonalImagesGrid from '../../components/PersonalImagesGrid/index';
-import largeImagesData from '../../adapters/largeImagesData';
-import pageText from '../../adapters/pageText';
-import personalImagesData from '../../adapters/personalImagesData';
+import Hero from 'components/Hero';
+import CenterContainer from 'components/CenterContainer';
+import TextSection from 'components/TextSection';
+import PersonalImagesGrid from 'components/PersonalImagesGrid';
+import largeImagesData from 'adapters/largeImagesData';
+import pageText from 'adapters/pageText';
+import personalImagesData from 'adapters/personalImagesData';
 
 export default function About({ windowType }) {
   useEffect(() => {

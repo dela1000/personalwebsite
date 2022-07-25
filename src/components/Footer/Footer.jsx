@@ -1,6 +1,6 @@
 import { useContext } from 'react';
-import { Context } from '../../contexts/context';
-import pageText from '../../adapters/pageText';
+import { Context } from 'contexts/context';
+import pageText from 'adapters/pageText';
 import './Footer.css';
 
 export default function Footer() {

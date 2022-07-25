@@ -1,7 +1,7 @@
 import { useContext } from 'react';
-import Navbar from '../Navbar/Navbar';
+import { Context } from 'contexts/context';
+import Navbar from 'components/Navbar/Navbar';
 import './Header.css';
-import { Context } from '../../contexts/context';
 
 export default function Header() {
   const [{ themeName }] = useContext(Context);

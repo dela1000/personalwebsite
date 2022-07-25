@@ -4,8 +4,8 @@ import BrightnessHighIcon from '@material-ui/icons/BrightnessHigh';
 import BrightnessLowIcon from '@material-ui/icons/BrightnessLow';
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
-import { Context } from '../../contexts/context';
-import useWindowDimensions from '../../contexts/useWindowDimensions';
+import { Context } from 'contexts/context';
+import useWindowDimensions from 'contexts/useWindowDimensions';
 import './Navbar.css';
 
 const navList = ['home', 'projects', 'resume', 'tech', 'about', 'travel'];

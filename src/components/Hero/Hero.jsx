@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import ContactButton from '../ContactButton/index';
+import ContactButton from 'components/ContactButton/index';
 
 export default function BottomHero({
   imageLink,

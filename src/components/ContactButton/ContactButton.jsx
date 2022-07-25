@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import pageText from '../../adapters/pageText';
+import pageText from 'adapters/pageText';
 
 export default function ContactButton({ text }) {
   if (!pageText.contactButton.contactEmail) return null;

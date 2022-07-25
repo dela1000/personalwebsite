@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import Hero from '../../components/Hero/index';
-import CenterContainer from '../../components/CenterContainer/index';
-import TextSection from '../../components/TextSection/index';
-import ResumeHolder from '../../components/ResumeHolder/index';
-import largeImagesData from '../../adapters/largeImagesData';
-import pageText from '../../adapters/pageText';
+import Hero from 'components/Hero';
+import CenterContainer from 'components/CenterContainer';
+import TextSection from 'components/TextSection';
+import ResumeHolder from 'components/ResumeHolder';
+import largeImagesData from 'adapters/largeImagesData';
+import pageText from 'adapters/pageText';
 
 export default function Resume({ windowType }) {
   useEffect(() => {

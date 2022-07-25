@@ -1,10 +1,10 @@
-import event from '../assets/projects/rendezbrew/event.png';
-import home from '../assets/projects/rendezbrew/home.png';
-import myevent from '../assets/projects/rendezbrew/myevent.png';
+import event from 'assets/projects/rendezbrew/event.png';
+import home from 'assets/projects/rendezbrew/home.png';
+import myevent from 'assets/projects/rendezbrew/myevent.png';
 
-import firstview from '../assets/projects/acrogenerator/firstview.png';
-import secondview from '../assets/projects/acrogenerator/secondview.png';
-import splash from '../assets/projects/acrogenerator/splash.png';
+import firstview from 'assets/projects/acrogenerator/firstview.png';
+import secondview from 'assets/projects/acrogenerator/secondview.png';
+import splash from 'assets/projects/acrogenerator/splash.png';
 
 const projectImages = {
   rendezbrew: {

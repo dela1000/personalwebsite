@@ -1,8 +1,8 @@
 import { useContext } from 'react';
 import PropTypes from 'prop-types';
-import { Context } from '../../contexts/context';
-import TextSection from '../TextSection/index';
-import ContactButton from '../ContactButton/index';
+import { Context } from 'contexts/context';
+import TextSection from 'components/TextSection/index';
+import ContactButton from 'components/ContactButton/index';
 
 export default function TravelSection({ travelText, travelImagesData }) {
   const [{ themeName }] = useContext(Context);

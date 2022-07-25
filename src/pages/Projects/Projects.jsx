@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import Hero from '../../components/Hero/index';
-import TextSection from '../../components/TextSection/index';
-import ProjectImagesSection from '../../components/ProjectImagesSection/index';
-import largeImagesData from '../../adapters/largeImagesData';
-import projects from '../../adapters/projects';
-import pageText from '../../adapters/pageText';
+import Hero from 'components/Hero';
+import TextSection from 'components/TextSection';
+import ProjectImagesSection from 'components/ProjectImagesSection';
+import largeImagesData from 'adapters/largeImagesData';
+import projects from 'adapters/projects';
+import pageText from 'adapters/pageText';
 
 export default function Projects({ windowType }) {
   useEffect(() => {
