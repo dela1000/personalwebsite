@@ -12,12 +12,12 @@ const pageText = {
       secondaryText: 'Creating meaningful experiences through unique online ventures',
     },
     bottomHero: {
-      primaryText: 'HIRE A SENIOR FULL STACK ENGINEER TODAY',
-      secondaryText: 'Do you have a website idea and need help from an expert?',
+      primaryText: 'HIRE A FULL STACK ENGINEER TODAY',
+      secondaryText: 'Do you have a project idea and need help from an expert?',
     },
     name: 'DANIEL DE LA ROSA',
     header: 'Senior Full Stack Engineer',
-    description: `With over ${yearsAsDev} years of experience effectively coding websites and applications, my career has included building scalable online projects from the ground up, maintaining and debugging client-facing products, and updating legacy code to match the rapidly changing standards required to run applications securely and efficiently.`,
+    description: `With over ${yearsAsDev} years of experience effectively coding profession applications and business or personal websites, my career has included building multiple scalable online projects from the ground up, maintaining and debugging client-facing products, and updating legacy code to match the rapidly changing standards required to run applications securely and efficiently.`,
   },
   projects: {
     topHero: {
@@ -26,7 +26,7 @@ const pageText = {
     },
     bottomHero: {
       primaryText: 'GET YOUR WEB PROJECT STARTED TODAY',
-      secondaryText: 'Do you have a project idea and need help from an expert?',
+      secondaryText: 'Do you have an idea and need help from an expert?',
     },
   },
   resume: {
@@ -35,7 +35,7 @@ const pageText = {
       secondaryText: 'Review a bit more about my professional background',
     },
     bottomHero: {
-      primaryText: 'HIRE A SENIOR FULL STACK ENGINEER TODAY',
+      primaryText: 'HIRE A FULL STACK ENGINEER TODAY',
       secondaryText: 'Do you have a website idea and need help from an expert?',
     },
     header: 'Experience goes a long way',
@@ -48,9 +48,9 @@ const pageText = {
           title: 'Senior Full Stack Engineer',
           time: '2021-2022',
           bulletPoints: [
-            'Plan and implement the development of version 2.0 of our main mobile and web based applications',
-            'Guide junior developers in understanding and implement features into the codebase',
-            'Development of full stack features for our multiple mobile and web applications',
+            'Plan and implement the development of version 2.0 of the flagship mobile and supportive web-based applications',
+            'Guide junior developers in understanding and implement features into the codebase and solving development problems',
+            'Full stack development of full stack features for our multiple mobile and web applications',
           ],
         },
         {
@@ -140,7 +140,7 @@ const pageText = {
     },
     header: 'Creating what you want with the right tools',
     description:
-      'Wielding a variety of technologies and support properties, website design and development becomes easier. Below is a condensed list of the technologies which will make your online presence be clear and concise.',
+      'Wielding a variety of technologies and support libraries, website design and development becomes easier. Below is a condensed list of the technologies which will make your online presence be clear and concise.',
   },
   about: {
     topHero: {
@@ -148,12 +148,12 @@ const pageText = {
       secondaryText: 'Learn a bit more about who I am away from my laptop.',
     },
     bottomHero: {
-      primaryText: 'HIRE A SENIOR FULL STACK ENGINEER TODAY',
+      primaryText: 'HIRE A FULL STACK ENGINEER TODAY',
       secondaryText: 'Do you have a website idea and need help from an expert?',
     },
     header: 'Fun Facts',
     description: `I am an avid partner-acrobatics certified educator, I have played drums for over ${
-      yearsinTech * 2
+      yearsinTech + 13
     } years and guitar for ${yearsinTech}, ran the 2009 Los Angeles Marathon and a number of half-marathons, learned development with HackReactor, became a digital nomad in 2017 with Remote Year and have continued to travel the world for the last ${travelYears} years visiting over 35 countries carrying a ukulele.`,
   },
   travel: {
