@@ -1,9 +1,0 @@
-.footer-text-size {
-  font-size: 0.75rem;
-}
-
-@media (max-width: 768px) {
-  .footer-text-size {
-    font-size: 0.65rem;
-  }
-}
