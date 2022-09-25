@@ -1,0 +1,16 @@
+{
+  "/_error": "pages/_error.js",
+  "/about": "pages/about.html",
+  "/about/About": "pages/about/About.html",
+  "/": "pages/index.html",
+  "/projects/Projects": "pages/projects/Projects.html",
+  "/api/hello": "pages/api/hello.js",
+  "/projects": "pages/projects.html",
+  "/resume/Resume": "pages/resume/Resume.html",
+  "/resume": "pages/resume.html",
+  "/tech/Tech": "pages/tech/Tech.html",
+  "/tech": "pages/tech.html",
+  "/travel/Travel": "pages/travel/Travel.html",
+  "/travel": "pages/travel.html",
+  "/404": "pages/404.html"
+}
