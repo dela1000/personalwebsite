@@ -6,17 +6,18 @@ import ResumeHolder from 'components/ResumeHolder';
 import largeImagesData from 'adapters/largeImagesData';
 import pageText from 'adapters/pageText';
 
-import { UseAppContext } from 'types/types';
+import { UseAppContext, LargeImagesDataTypes } from 'types/types';
 
 export default function Resume() {
   const {
-    sharedState: { windowType, themeName }
+    sharedState: { windowType, themeName = 'dark' },
   }: UseAppContext = useAppContext();
+  const largeImagesDataWindowType = largeImagesData[windowType as keyof LargeImagesDataTypes];
 
   return (
     <div className={`${themeName === 'dark' ? 'dark-header' : 'light-header'}  fade-in`}>
       <Hero
-        imageLink={largeImagesData[windowType].keyboardbw.src}
+        imageLink={largeImagesDataWindowType.keyboardbw.src}
         centerText={pageText.resume.topHero.primaryText}
         bottomText={pageText.resume.topHero.secondaryText}
         windowType={windowType}
@@ -26,7 +27,7 @@ export default function Resume() {
       </CenterContainer>
       <ResumeHolder resumeData={pageText.resume.resumeData} themeName={themeName} />
       <Hero
-        imageLink={largeImagesData[windowType].lisbonbw.src}
+        imageLink={largeImagesDataWindowType.lisbonbw.src}
         topText={pageText.resume.bottomHero.secondaryText}
         centerText={pageText.resume.bottomHero.primaryText}
         contactText={pageText.contactButton.contactMe}

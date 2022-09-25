@@ -6,7 +6,7 @@ import { TravelImagesDataTypes, TravelTextTypes } from 'types/types';
 export default function TravelSection({
   travelText,
   travelImagesData,
-  themeName
+  themeName,
 }: {
   travelText: TravelTextTypes;
   travelImagesData: TravelImagesDataTypes;
@@ -55,7 +55,7 @@ export default function TravelSection({
                 <img
                   className="sepia image-transition"
                   src={travelImagesData.athens.src}
-                  alt={travelImagesData.athens}
+                  alt={travelImagesData.athens.src}
                 />
               </div>
             </div>
@@ -79,7 +79,7 @@ export default function TravelSection({
               <img
                 className="sepia w-96 image-transition"
                 src={travelImagesData.danielIreland.src}
-                alt={travelImagesData.danielIreland}
+                alt={travelImagesData.danielIreland.src}
               />
             </div>
           </div>
@@ -107,7 +107,7 @@ export default function TravelSection({
               <img
                 className="sepia w-96 image-transition"
                 src={travelImagesData.RachelMorocco.src}
-                alt={travelImagesData.RachelMorocco}
+                alt={travelImagesData.RachelMorocco.src}
               />
             </div>
           </div>

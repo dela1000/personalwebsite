@@ -6,17 +6,18 @@ import largeImagesData from 'adapters/largeImagesData';
 import pageText from 'adapters/pageText';
 import travelImagesData from 'adapters/travelImagesData';
 
-import { UseAppContext } from 'types/types';
+import { UseAppContext, LargeImagesDataTypes } from 'types/types';
 
 export default function Travel() {
   const {
-    sharedState: { windowType, themeName }
+    sharedState: { windowType, themeName = 'dark' },
   }: UseAppContext = useAppContext();
+  const largeImagesDataWindowType = largeImagesData[windowType as keyof LargeImagesDataTypes];
 
   return (
     <div className={`${themeName === 'dark' ? 'dark-header' : 'light-header'}  fade-in`}>
       <Hero
-        imageLink={largeImagesData[windowType].benchbw.src}
+        imageLink={largeImagesDataWindowType.benchbw.src}
         centerText={pageText.travel.topHero.primaryText}
         bottomText={pageText.travel.topHero.secondaryText}
         windowType={windowType}
@@ -28,7 +29,7 @@ export default function Travel() {
       />
       <PersonalImagesGrid imagesData={travelImagesData.gridPhotos} />
       <Hero
-        imageLink={largeImagesData[windowType].cliffsbw.src}
+        imageLink={largeImagesDataWindowType.cliffsbw.src}
         centerText={pageText.travel.bottomHero.primaryText}
         windowType={windowType}
         contactText={pageText.travel.contactUs}

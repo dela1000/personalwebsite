@@ -7,17 +7,18 @@ import largeImagesData from 'adapters/largeImagesData';
 import pageText from 'adapters/pageText';
 import techImagesData from 'adapters/techImagesData';
 
-import { UseAppContext } from 'types/types';
+import { UseAppContext, LargeImagesDataTypes } from 'types/types';
 
 export default function Tech() {
   const {
-    sharedState: { windowType, themeName }
+    sharedState: { windowType, themeName },
   }: UseAppContext = useAppContext();
+  const largeImagesDataWindowType = largeImagesData[windowType as keyof LargeImagesDataTypes];
 
   return (
     <div className={`${themeName === 'dark' ? 'dark-header' : 'light-header'}  fade-in`}>
       <Hero
-        imageLink={largeImagesData[windowType].praguebw.src}
+        imageLink={largeImagesDataWindowType.praguebw.src}
         centerText={pageText.tech.topHero.primaryText}
         bottomText={pageText.tech.topHero.secondaryText}
         windowType={windowType}
@@ -27,7 +28,7 @@ export default function Tech() {
         <TechImagesGrid imagesData={techImagesData} />
       </CenterContainer>
       <Hero
-        imageLink={largeImagesData[windowType].barcelonabw.src}
+        imageLink={largeImagesDataWindowType.barcelonabw.src}
         topText={pageText.tech.bottomHero.secondaryText}
         centerText={pageText.tech.bottomHero.primaryText}
         contactText={pageText.contactButton.contactMe}

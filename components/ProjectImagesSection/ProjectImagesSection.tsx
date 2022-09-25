@@ -5,32 +5,22 @@ export default function ProjectImagesSection({ imagesObj }: ProjectImagesSection
   return (
     <div>
       <div className="flex items-center justify-center image-transition-wrap">
-        <Image
-          width={250}
-          height={444}
-          className="p-4 max-w-xs image-transition"
-          src={imagesObj.firstImage.src}
-          alt="First"
-        />
+        <img className="p-4 max-w-xs image-transition" src={imagesObj.firstImage.src} alt="First" />
       </div>
       <div className="flex flex-wrap flex-wrap-reverse">
         <div className="w-full lg:w-1/2 mt-10">
-          <div className="flex items-center justify-center image-transition-wrap mx-2">
-            <Image
-              width={250}
-              height={444}
-              className="p-4 max-w-xs image-transition pt-1"
+          <div className="flex items-center justify-center image-transition-wrap">
+            <img
+              className="p-4 max-w-xs image-transition"
               src={imagesObj.secondImage.src}
               alt="second"
             />
           </div>
         </div>
         <div className="w-full lg:w-1/2 mt-10">
-          <div className="h-full flex items-center justify-center image-transition-wrap mx-2">
+          <div className="h-full flex items-center justify-center image-transition-wrap">
             {' '}
-            <Image
-              width={250}
-              height={444}
+            <img
               className="p-4 max-w-xs image-transition"
               src={imagesObj.thirdImage.src}
               alt="third"

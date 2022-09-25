@@ -25,15 +25,15 @@ export default function Navbar() {
 
   useEffect(() => {
     if (currentWidth !== width) {
-      toggleNavbar('close');
+      toggleNavbar?.('close');
       setCurrentWidth(width);
     }
   }, [width]);
 
-  const toggleNavList = () => toggleNavbar(!navbarState)
-  const closeNavList = () => toggleNavbar(false);
+  const toggleNavList = () => toggleNavbar?.(!navbarState);
+  const closeNavList = () => toggleNavbar?.(false);
 
-  const navigate = (navigateTo) => {
+  const navigate = (navigateTo: string) => {
     if (navigateTo === 'home') {
       router.push('/');
       return;
@@ -56,26 +56,38 @@ export default function Navbar() {
     goHome();
   }, [router.pathname]);
 
-  const setLocation = (navOption) => {
-    return router.pathname === `/${navOption}` || (router.pathname === '/' && navOption === 'home') ? styles['currentLocationLink'] : styles['link'];
-  }
+  const setLocation = (navOption: string) => {
+    return router.pathname === `/${navOption}` || (router.pathname === '/' && navOption === 'home')
+      ? styles['currentLocationLink']
+      : styles['link'];
+  };
+
+  const setNavList = () => {
+    return windowType === 'desktop' ? styles['nav__list'] : styles['nav__list_mobile'];
+  };
+
+  const setWindowTypeClass = () => {
+    return navbarState
+      ? windowType === 'desktop'
+        ? styles[`${themeName}_nav__list__background_color h-screen`]
+        : styles['nav__list_mobile']
+      : windowType === 'desktop'
+      ? styles[`${themeName}_nav__list__background_color`]
+      : styles['nav__list_mobile'];
+  };
 
   return (
     <nav className="center">
       <div
-        style={{ display: !navbarState ? 'flex' : null }}
-        className={
-          (navbarState
-            ? windowType === 'desktop' ? styles[`${themeName}_nav__list__background_color h-screen`] : styles['nav__list_mobile']
-            : windowType === 'desktop' ? styles[`${themeName}_nav__list__background_color`] : styles['nav__list_mobile'],
-          windowType === 'desktop' ? styles['nav__list'] : styles['nav__list_mobile'],
-          )
-        }
+        style={{ display: !navbarState ? 'flex' : undefined }}
+        className={(setWindowTypeClass(), setNavList())}
       >
         {navList.map((navOption) => (
           <div
             key={navOption}
-            className={`monserrat link-nav mx-0.5 ${setLocation(navOption)} ${ windowType === 'desktop' ? styles['nav-list-item'] : styles['nav-list-item_mobile']}` }
+            className={`monserrat link-nav mx-0.5 ${setLocation(navOption)} ${
+              windowType === 'desktop' ? styles['nav-list-item'] : styles['nav-list-item_mobile']
+            }`}
           >
             <button
               className="uppercase"
@@ -122,7 +134,7 @@ export default function Navbar() {
         }`}
         aria-label="toggle navigation"
       >
-        {navbarState ?  <MenuIcon /> : <CloseIcon />}
+        {navbarState ? <MenuIcon /> : <CloseIcon />}
       </button>
     </nav>
   );

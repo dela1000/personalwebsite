@@ -8,7 +8,7 @@ export default function Hero({
   centerText,
   bottomText,
   windowType,
-  contactText
+  contactText,
 }: HeroTypes) {
   return (
     <div id={contactText ? 'contact' : undefined} className="relative z-0">

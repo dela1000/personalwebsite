@@ -3,6 +3,8 @@ import 'styles/globals.css';
 import { AppWrapper } from 'contexts/context';
 import Layout from 'components/Layout';
 
+import { ChildrenTypes } from 'types/types';
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <AppWrapper>

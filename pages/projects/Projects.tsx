@@ -6,16 +6,18 @@ import largeImagesData from 'adapters/largeImagesData';
 import projects from 'adapters/projects';
 import pageText from 'adapters/pageText';
 
-import { UseAppContext } from 'types/types';
+import { UseAppContext, LargeImagesDataTypes } from 'types/types';
 
 export default function Projects() {
   const {
-    sharedState: { windowType, themeName }
+    sharedState: { windowType, themeName },
   }: UseAppContext = useAppContext();
+
+  const largeImagesDataWindowType = largeImagesData[windowType as keyof LargeImagesDataTypes];
   return (
     <div className={`${themeName === 'dark' ? 'dark-header' : 'light-header'}  fade-in`}>
       <Hero
-        imageLink={largeImagesData[windowType].acropolisbw.src}
+        imageLink={largeImagesDataWindowType.acropolisbw.src}
         centerText={pageText.projects.topHero.primaryText}
         bottomText={pageText.projects.topHero.secondaryText}
         windowType={windowType}
@@ -59,7 +61,7 @@ export default function Projects() {
       </div>
 
       <Hero
-        imageLink={largeImagesData[windowType].albaiuliabw.src}
+        imageLink={largeImagesDataWindowType.albaiuliabw.src}
         topText={pageText.projects.bottomHero.secondaryText}
         centerText={pageText.projects.bottomHero.primaryText}
         contactText={pageText.contactButton.contactMe}

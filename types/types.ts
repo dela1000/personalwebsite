@@ -5,17 +5,15 @@ export type ChildrenTypes = {
 };
 
 type ImgData = {
-  src: string;
-};
-
-type ImageTypes = {
-  firstImage: ImgData;
-  secondImage: ImgData;
-  thirdImage: ImgData;
+  src?: string;
 };
 
 export type ProjectImagesSectionTypes = {
-  imagesObj: ImageTypes;
+  imagesObj: {
+    firstImage: ImgData;
+    secondImage: ImgData;
+    thirdImage: ImgData;
+  };
 };
 
 export type ImageDataTypes = {
@@ -58,7 +56,7 @@ export type TravelImagesDataTypes = {
   athens: ImgData;
   danielIreland: ImgData;
   gridPhotos: ImageDataTypes[];
-  thingsCovered: string[];
+  thingsCovered?: string[];
 };
 
 export type TravelTextTypes = {
@@ -98,4 +96,47 @@ export type UseAppContext = {
   };
   toggleTheme?: () => null;
   toggleNavbar?: (close: string | boolean) => null;
+};
+
+export type ButtonProps = {
+  text: string;
+};
+
+export type LargeImagesDataTypes = {
+  desktop: {
+    acropolisbw: string;
+    albaiuliabw: string;
+    barcelonabw: string;
+    benchbw: string;
+    cliffsbw: string;
+    eterabw: string;
+    fesbw: string;
+    halongbaybw: string;
+    karlstejnbw: string;
+    keyboardbw: string;
+    lisbonbw: string;
+    merzougabw: string;
+    mexicocitybw: string;
+    portobw: string;
+    praguebw: string;
+    sintrabw: string;
+  };
+  mobile: {
+    acropolisbw: string;
+    albaiuliabw: string;
+    barcelonabw: string;
+    benchbw: string;
+    cliffsbw: string;
+    eterabw: string;
+    fesbw: string;
+    halongbaybw: string;
+    karlstejnbw: string;
+    keyboardbw: string;
+    lisbonbw: string;
+    merzougabw: string;
+    mexicocitybw: string;
+    portobw: string;
+    praguebw: string;
+    sintrabw: string;
+  };
 };

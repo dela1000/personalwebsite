@@ -1,8 +1,6 @@
 import pageText from 'adapters/pageText';
 
-type ButtonProps = {
-  text: string;
-};
+import { ButtonProps } from 'types/types';
 
 export default function ContactButton({ text }: ButtonProps) {
   if (!pageText.contactButton.contactEmail) return null;

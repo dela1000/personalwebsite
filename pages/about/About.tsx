@@ -7,17 +7,18 @@ import largeImagesData from 'adapters/largeImagesData';
 import pageText from 'adapters/pageText';
 import personalImagesData from 'adapters/personalImagesData';
 
-import { UseAppContext } from 'types/types';
+import { UseAppContext, LargeImagesDataTypes } from 'types/types';
 
 export default function About() {
   const {
-    sharedState: { windowType, themeName }
+    sharedState: { windowType = 'desktop', themeName },
   }: UseAppContext = useAppContext();
+  const largeImagesDataWindowType = largeImagesData[windowType as keyof LargeImagesDataTypes];
 
   return (
     <div className={`${themeName === 'dark' ? 'dark-header' : 'light-header'}  fade-in`}>
       <Hero
-        imageLink={largeImagesData[windowType].eterabw.src}
+        imageLink={largeImagesDataWindowType.eterabw.src}
         centerText={pageText.about.topHero.primaryText}
         bottomText={pageText.about.topHero.secondaryText}
         windowType={windowType}
@@ -27,7 +28,7 @@ export default function About() {
       </CenterContainer>
       <PersonalImagesGrid imagesData={personalImagesData} />
       <Hero
-        imageLink={largeImagesData[windowType].barcelonabw.src}
+        imageLink={largeImagesDataWindowType.barcelonabw.src}
         centerText={pageText.about.bottomHero.primaryText}
         topText={pageText.about.bottomHero.secondaryText}
         contactText={pageText.contactButton.contactMe}

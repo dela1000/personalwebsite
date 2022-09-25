@@ -2,5 +2,17 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js"
+  "/about/About": "pages/about/About.html",
+  "/about": "pages/about.html",
+  "/api/hello": "pages/api/hello.js",
+  "/": "pages/index.html",
+  "/projects/Projects": "pages/projects/Projects.html",
+  "/projects": "pages/projects.html",
+  "/resume/Resume": "pages/resume/Resume.html",
+  "/resume": "pages/resume.html",
+  "/tech/Tech": "pages/tech/Tech.html",
+  "/travel/Travel": "pages/travel/Travel.html",
+  "/tech": "pages/tech.html",
+  "/travel": "pages/travel.html",
+  "/404": "pages/404.html"
 }

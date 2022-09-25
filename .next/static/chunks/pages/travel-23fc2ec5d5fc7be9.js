@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[104],{1242:function(n,u,t){(window.__NEXT_P=window.__NEXT_P||[]).push(["/travel",function(){return t(1189)}])},1189:function(n,u,t){"use strict";t.r(u),t.d(u,{default:function(){return _.default}});var _=t(5111)}},function(n){n.O(0,[380,111,774,888,179],function(){return n(n.s=1242)}),_N_E=n.O()}]);
