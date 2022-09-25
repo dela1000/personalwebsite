@@ -8,7 +8,7 @@ export function AppWrapper({ children }) {
   const [sharedState, setShareState] = useState({
     themeName: 'light',
     navbarState: false,
-    windowType: 'desktop'
+    windowType: 'desktop',
   });
 
   useEffect(() => {
