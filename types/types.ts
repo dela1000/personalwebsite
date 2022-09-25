@@ -97,5 +97,5 @@ export type UseAppContext = {
     themeName?: string;
   };
   toggleTheme?: () => null;
-  toggleNavbar?: () => null;
+  toggleNavbar?: (close: string | boolean) => null;
 };
