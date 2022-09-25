@@ -10,7 +10,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="shortcut icon" href="/static/favicon.ico" />
+          <link rel="shortcut icon" href="/favicon.ico" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <meta name="description" content="Personal website for Daniel De La Rosa" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
