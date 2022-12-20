@@ -22,7 +22,32 @@ export default function Projects() {
         bottomText={pageText.projects.topHero.secondaryText}
         windowType={windowType}
       />
+
+      <div className="flex flex-wrap flex-wrap-reverse lg:my-24 mb-24">
+        <div className="w-full lg:w-1/2 mt-10">
+          <div className="h-full flex items-center justify-center">
+            <div className="description-text-size monserrat px-16 text-right">
+              <TextSection
+                text={projects.recipes.header}
+                description={projects.recipes.description}
+                developed={projects.recipes.developed}
+              />
+            </div>
+          </div>
+        </div>
+        <div className="w-full lg:w-1/2 mt-10">
+          <div className="flex items-center justify-center">
+            <ProjectImagesSection imagesObj={projects.recipes} />
+          </div>
+        </div>
+      </div>
+
       <div className="flex flex-wrap lg:my-20">
+        <div className="w-full lg:w-1/2 mt-10">
+          <div className="flex items-center justify-center">
+            <ProjectImagesSection imagesObj={projects.rendezbrew} />
+          </div>
+        </div>
         <div className="w-full lg:w-1/2 mt-10">
           <div className="h-full flex items-center justify-center">
             <div className="description-text-size monserrat px-16">
@@ -34,19 +59,9 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 mt-10">
-          <div className="flex items-center justify-center">
-            <ProjectImagesSection imagesObj={projects.rendezbrew} />
-          </div>
-        </div>
       </div>
 
       <div className="flex flex-wrap flex-wrap-reverse lg:my-24 mb-24">
-        <div className="w-full lg:w-1/2 mt-10">
-          <div className="flex items-center justify-center">
-            <ProjectImagesSection imagesObj={projects.acrogenerator} />
-          </div>
-        </div>
         <div className="w-full lg:w-1/2 mt-10">
           <div className="h-full flex items-center justify-center">
             <div className="description-text-size monserrat px-16 text-right">
@@ -56,6 +71,11 @@ export default function Projects() {
                 developed={projects.acrogenerator.developed}
               />
             </div>
+          </div>
+        </div>
+        <div className="w-full lg:w-1/2 mt-10">
+          <div className="flex items-center justify-center">
+            <ProjectImagesSection imagesObj={projects.acrogenerator} />
           </div>
         </div>
       </div>

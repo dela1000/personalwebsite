@@ -6,7 +6,20 @@ import firstview from 'assets/projects/acrogenerator/firstview.png';
 import secondview from 'assets/projects/acrogenerator/secondview.png';
 import splash from 'assets/projects/acrogenerator/splash.png';
 
+import recipesfirstview1 from 'assets/projects/recipes/1.png';
+import recipessecondview1 from 'assets/projects/recipes/2.png';
+import recipesthirdview1 from 'assets/projects/recipes/3.png';
+
 const projectImages = {
+  recipes: {
+    firstImage: recipesfirstview1,
+    secondImage: recipesthirdview1,
+    thirdImage: recipessecondview1,
+    header: 'Shopreceta',
+    description:
+      "Planning, shopping, and cooking made simple. Shopreceta helps you keep all your recipes in one place, create a shopping list with the recipe's ingredients, and view the recipe in a mobile and user friendly UI when cooking. It can be used on browsers and as iOS and Android mobile apps.",
+    developed: 'React, React Native, NodeJS, and Firebase. Deployed to Netlify.',
+  },
   rendezbrew: {
     firstImage: home,
     secondImage: event,
