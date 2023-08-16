@@ -43,6 +43,17 @@ const pageText = {
     resumeData: {
       experience: [
         {
+          company: 'Chewy',
+          tag: 'The most trusted and convenient destination for pet parents (and partners) everywhere.',
+          title: 'Senior Full Stack Engineer',
+          time: '2022-2023',
+          bulletPoints: [
+            'Led the development and implementation of the Buy It Again project resulting in improved customer retention and increase in sales through personal recommendations',
+            'Developed and implemented the Related Searches project, enhancing user experience, improving search accuracy for tens of thousands of daily visitors and optimizing SEO strategies to increase organic traffic and improve search engine rankings',
+            'Executed senior-level responsibilities including leading technical initiatives, mentoring junior team members, conducting code reviews, and ensuring adherence to best practices and coding standards to deliver high-quality software solutions',
+          ],
+        },
+        {
           company: 'Cents',
           tag: 'Bringing laundry services to the 21st century, all-in-one platform to grow your laundry business.',
           title: 'Senior Full Stack Engineer',

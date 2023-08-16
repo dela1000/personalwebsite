@@ -8,8 +8,12 @@ import node from 'assets/logos/node.png';
 import git from 'assets/logos/git.png';
 import vue from 'assets/logos/vue.png';
 import tailwind from 'assets/logos/tailwind.png';
+import typescript from 'assets/logos/typescript.png';
+import javascript from 'assets/logos/javascript.png';
 
 const techImagesData = [
+  { img: javascript, name: 'Javascript' },
+  { img: typescript, name: 'Typescript' },
   { img: react, name: 'React/Native' },
   { img: vue, name: 'Vue' },
   { img: angular, name: 'Angular' },
@@ -19,7 +23,7 @@ const techImagesData = [
   { img: git, name: 'git' },
   { img: tailwind, name: 'TailwindCSS' },
   { img: bootstrap, name: 'Bootstrap' },
-  { img: adobe, name: 'Adobe' }
+  { img: adobe, name: 'Adobe' },
 ];
 
 export default techImagesData;

@@ -72,7 +72,7 @@ export default function TravelSection({
           themeName === 'dark' ? 'bg-gray-400' : 'bg-gray-300'
         } center-container-padding`}
       >
-        <TextSection text="Who are we" />
+        <TextSection text="Who we are" />
         <div className="flex flex-wrap">
           <div className="flex items-center justify-center w-full lg:w-1/2 mt-10">
             <div className="image-transition-wrap">
