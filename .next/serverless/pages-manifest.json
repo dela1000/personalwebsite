@@ -12,5 +12,6 @@
   "/tech": "pages/tech.html",
   "/travel/Travel": "pages/travel/Travel.html",
   "/travel": "pages/travel.html",
+  "/pushupspolicy": "pages/pushupspolicy.html",
   "/404": "pages/404.html"
 }
