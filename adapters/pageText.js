@@ -1,6 +1,6 @@
 import moment from 'moment';
 
-const yearsinTech = moment().diff('2011-01-01', 'years', false);
+const yearsInTech = moment().diff('2011-01-01', 'years', false);
 const yearsAsDev = moment().diff('2015-01-01', 'years', false);
 const currentYear = moment().format('YYYY');
 
@@ -38,7 +38,7 @@ const pageText = {
       secondaryText: 'Do you have a website idea and need help from an expert?',
     },
     header: 'Experience goes a long way',
-    description: `With over ${yearsinTech} years in the technology industry and more than ${yearsAsDev} as a Full Stack engineer, I have cultivated a strong background in program development, providing positive results on all the projects in which I have participated.`,
+    description: `With over ${yearsInTech} years in the technology industry and more than ${yearsAsDev} as a Full Stack engineer, I have cultivated a strong background in program development, providing positive results on all the projects in which I have participated.`,
     resumeData: {
       experience: [
         {
@@ -177,8 +177,8 @@ const pageText = {
     },
     header: 'Fun Facts',
     description: `I am an avid partner-acrobatics certified educator, I have played drums for over ${
-      yearsinTech + 13
-    } years and guitar for ${yearsinTech}, ran the 2009 Los Angeles Marathon and a number of half-marathons, learned development with HackReactor, became a digital nomad in 2017 with Remote Year and traveled the world for the 7 years visiting over 35 countries carrying a ukulele. I now reside in St. Louis, MO.`,
+      yearsInTech + 13
+    } years and guitar for ${yearsInTech}, ran the 2009 Los Angeles Marathon and a number of half-marathons, learned development with HackReactor, became a digital nomad in 2017 with Remote Year and traveled the world for 7 years visiting over 35 countries carrying a ukulele. I now reside in St. Louis, MO.`,
   },
   travel: {
     topHero: {
