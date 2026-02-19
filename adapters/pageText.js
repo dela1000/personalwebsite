@@ -43,6 +43,20 @@ const pageText = {
     resumeData: {
       experience: [
         {
+          company: 'Agility Robotics',
+          tag: "The world's first commercially deployed humanoid robot.",
+          title: 'Senior Software Engineer - Front-End Applications',
+          time: '2023-Present',
+          bulletPoints: [
+            'Lead architectural implementation and dependency analysis, guiding the team in strategic decision-making for the Agility Arc robot management platform',
+            'Implement chosen architectural approaches to enhance overall system robustness and performance',
+            'Migrated frontend application to Vite for faster and more dynamic development',
+            'Implement build, testing and coverage suite to prevent issues moving up into production',
+            'Upgrade CI/CD pipelines, integrating testing and application builds for frontend application',
+            'Created processes for testing with a live Digit, deployment rotations, and on-call coverage',
+          ],
+        },
+        {
           company: 'Chewy',
           tag: 'The most trusted and convenient destination for pet parents (and partners) everywhere.',
           title: 'Senior Full Stack Engineer',
