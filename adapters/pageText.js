@@ -2,7 +2,6 @@ import moment from 'moment';
 
 const yearsinTech = moment().diff('2011-01-01', 'years', false);
 const yearsAsDev = moment().diff('2015-01-01', 'years', false);
-const travelYears = moment().diff('2016-04-01', 'years', false);
 const currentYear = moment().format('YYYY');
 
 const pageText = {
@@ -179,7 +178,7 @@ const pageText = {
     header: 'Fun Facts',
     description: `I am an avid partner-acrobatics certified educator, I have played drums for over ${
       yearsinTech + 13
-    } years and guitar for ${yearsinTech}, ran the 2009 Los Angeles Marathon and a number of half-marathons, learned development with HackReactor, became a digital nomad in 2017 with Remote Year and have continued to travel the world for the last ${travelYears} years visiting over 35 countries carrying a ukulele.`,
+    } years and guitar for ${yearsinTech}, ran the 2009 Los Angeles Marathon and a number of half-marathons, learned development with HackReactor, became a digital nomad in 2017 with Remote Year and traveled the world for the 7 years visiting over 35 countries carrying a ukulele. I now reside in St. Louis, MO.`,
   },
   travel: {
     topHero: {
@@ -208,7 +207,7 @@ const pageText = {
     ],
     cost: ['$90 for 90 minutes.', 'It’s the cost of a nice date night in Cape Town.'],
     ddr: 'Daniel De La Rosa',
-    dBio: ` has been traveling for over ${travelYears} years. After building a solid career in software development in an office in Pasadena, California, he realized that he was in a position to do a redesign of the way he worked. He began working remotely, and shortly after he signed up to travel with the program Remote Year. After 12 months and 15 countries, there was no way he was going back to a desk. In the years that followed, Daniel developed a personal system that enabled him to continue the nomadic lifestyle while also achieving financial freedom, stability, and control.`,
+    dBio: ` traveled the world for over 7 years. After building a solid career in software development in an office in Pasadena, California, he realized that he was in a position to do a redesign of the way he worked. He began working remotely, and shortly after he signed up to travel with the program Remote Year. After 12 months and 15 countries, there was no way he was going back to a desk. In the years that followed, Daniel developed a personal system that enabled him to continue the nomadic lifestyle while also achieving financial freedom, stability, and control.`,
     rw: 'Rachel Whitener',
     rBio: ' became successful as a professional chef in Los Angeles during her 10 years living in the city. After a trip to Morocco she saw the opportunity to travel the world and redefine herself as a digital nomad. A few months after joining Daniel, she started a new career as a Virtual Assistant and Account Manager while also teaching social media Master Classes. With a year of nomading under her belt, she has now visited over 20 countries and has a growing wishlist of new places to explore.',
     contactUs: 'contact us',
