@@ -16,7 +16,7 @@ const pageText = {
     },
     name: 'DANIEL DE LA ROSA',
     header: 'Senior Full Stack Engineer',
-    description: `With over ${yearsAsDev} years of experience effectively coding profession applications and business or personal websites, my career has included building multiple scalable online projects from the ground up, maintaining and debugging client-facing products, and updating legacy code to match the rapidly changing standards required to run applications securely and efficiently.`,
+    description: `With over ${yearsAsDev} years of experience building professional applications and business websites from the ground up, my career has spanned scalable project architecture, legacy code modernization, and client-facing product development. I write clean, deliberate code — and strategically leverage AI tooling to accelerate problem-solving, deepen technical research, and deliver more refined solutions than would otherwise be possible alone.`,
   },
   projects: {
     topHero: {
@@ -38,7 +38,7 @@ const pageText = {
       secondaryText: 'Do you have a website idea and need help from an expert?',
     },
     header: 'Experience goes a long way',
-    description: `With over ${yearsInTech} years in the technology industry and more than ${yearsAsDev} as a Full Stack engineer, I have cultivated a strong background in program development, providing positive results on all the projects in which I have participated.`,
+    description: `With over ${yearsInTech} years in the technology industry and more than ${yearsAsDev} as a Full Stack engineer, I have cultivated a strong foundation in software development across the full stack. I bring both the foundational expertise to build without shortcuts and the awareness to incorporate modern AI tools where they meaningfully improve the quality and efficiency of my work.`,
     resumeData: {
       experience: [
         {
