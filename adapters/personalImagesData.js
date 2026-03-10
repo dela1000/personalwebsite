@@ -15,7 +15,7 @@ const personalImagesData = [
   { img: krka, name: 'Krka, Croatia' },
   { img: sa, name: 'Cape Town, South Africa' },
   { img: thailand, name: 'Doi Inthanon, Thailand' },
-  { img: dog, name: 'Weston, Florida' }
+  { img: dog, name: 'Weston, Florida' },
 ];
 
 export default personalImagesData;

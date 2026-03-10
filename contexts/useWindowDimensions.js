@@ -5,12 +5,12 @@ function getWindowDimensions() {
     const { innerWidth: width, innerHeight: height } = window;
     return {
       width,
-      height
+      height,
     };
   }
   return {
     width: 1000,
-    height: 1000
+    height: 1000,
   };
 }
 

@@ -6,7 +6,7 @@ import { UseAppContext } from 'types/types';
 
 export default function Footer() {
   const {
-    sharedState: { themeName, windowType }
+    sharedState: { themeName, windowType },
   }: UseAppContext = useAppContext();
   return (
     <footer

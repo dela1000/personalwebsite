@@ -11,7 +11,6 @@ const nextConfig = {
     return config;
   },
   distDir: 'build',
-  target: 'serverless',
 };
 
 module.exports = nextConfig;
