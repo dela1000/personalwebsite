@@ -1,43 +1,31 @@
 import type { NextPage } from 'next';
-import { useAppContext } from 'contexts/context';
-import Hero from 'components/Hero';
-import CenterContainer from 'components/CenterContainer';
-import TextSection from 'components/TextSection';
-import largeImagesData from 'adapters/largeImagesData';
-import pageText from 'adapters/pageText';
+import Head from 'next/head';
 
-import { UseAppContext, LargeImagesDataTypes } from 'types/types';
+const RESUME = '/DanielDeLaRosaResume2026.pdf';
 
 const Home: NextPage = () => {
-  const {
-    sharedState: { windowType, themeName },
-  }: UseAppContext = useAppContext();
-
-  const largeImagesDataWindowType = largeImagesData[windowType as keyof LargeImagesDataTypes];
-
   return (
-    <div className={`${themeName === 'dark' ? 'dark-header' : 'light-header'}  fade-in`}>
-      <Hero
-        imageLink={largeImagesDataWindowType.merzougabw.src}
-        centerText={pageText.home.topHero.primaryText}
-        bottomText={pageText.home.topHero.secondaryText}
-        windowType={windowType}
-      />
-      <CenterContainer>
-        <TextSection
-          name={pageText.home.name}
-          text={pageText.home.header}
-          description={pageText.home.description}
-        />
-      </CenterContainer>
-      <Hero
-        imageLink={largeImagesDataWindowType.halongbaybw.src}
-        topText={pageText.home.bottomHero.secondaryText}
-        centerText={pageText.home.bottomHero.primaryText}
-        contactText={pageText.contactButton.contactMe}
-        windowType={windowType}
-      />
-    </div>
+    <>
+      <Head>
+        <title>Daniel De La Rosa</title>
+        <meta name="description" content="Daniel De La Rosa — Senior Full Stack Engineer." />
+      </Head>
+
+      <main className="inter flex min-h-screen min-h-[100dvh] w-full flex-col items-center justify-center bg-black px-6 text-center text-white">
+        <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">Daniel De La Rosa</h1>
+
+        <p className="mt-3 text-base text-neutral-400 sm:text-lg">Senior Full Stack Engineer</p>
+
+        <a
+          href={RESUME}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-8 text-sm text-[#e5c07b] underline underline-offset-4 transition-colors hover:text-[#f2d9a6]"
+        >
+          Résumé
+        </a>
+      </main>
+    </>
   );
 };
 
