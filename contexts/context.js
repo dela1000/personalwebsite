@@ -12,14 +12,18 @@ export function AppWrapper({ children }) {
   });
 
   useEffect(() => {
-    const isDark = localStorage.getItem('themeName') === 'light';
-    if (isDark) sharedState.themeName = 'light';
+    const savedTheme = localStorage.getItem('themeName');
+    if (savedTheme === 'dark' || savedTheme === 'light') {
+      setShareState((prev) => ({ ...prev, themeName: savedTheme }));
+    }
   }, []);
 
+  useEffect(() => {
+    document.body.className = sharedState.themeName;
+  }, [sharedState.themeName]);
+
   const setWidthToState = (windowType) => {
-    const sharedStateTemp = { ...sharedState };
-    sharedStateTemp.windowType = windowType;
-    setShareState(sharedStateTemp);
+    setShareState((prev) => ({ ...prev, windowType }));
   };
 
   useEffect(() => {
@@ -31,17 +35,13 @@ export function AppWrapper({ children }) {
   }, [width]);
 
   const toggleTheme = () => {
-    const name = sharedState.themeName === 'dark' ? 'light' : 'dark';
-    localStorage.setItem('themeName', name);
-    const sharedStateTemp = { ...sharedState };
-    sharedStateTemp.themeName = name;
-    setShareState(sharedStateTemp);
+    const newTheme = sharedState.themeName === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('themeName', newTheme);
+    setShareState((prev) => ({ ...prev, themeName: newTheme }));
   };
 
   const toggleNavbar = (close) => {
-    const sharedStateTemp = { ...sharedState };
-    sharedStateTemp.navbarState = close || !sharedState.navbarState;
-    setShareState(sharedStateTemp);
+    setShareState((prev) => ({ ...prev, navbarState: close || !prev.navbarState }));
   };
 
   return (

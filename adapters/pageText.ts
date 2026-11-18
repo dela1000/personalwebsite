@@ -1,0 +1,310 @@
+import moment from 'moment';
+
+const yearsInTech = moment().diff('2011-01-01', 'years', false);
+const yearsAsDev = moment().diff('2015-01-01', 'years', false);
+const currentYear = moment().format('YYYY');
+
+type HeroText = {
+  primaryText: string;
+  secondaryText: string;
+};
+
+type BulletPoint = {
+  company: string;
+  tag: string;
+  title: string;
+  time: string;
+  bulletPoints: string[];
+};
+
+type EducationItem = {
+  school: string;
+  degree: string;
+  time: string;
+};
+
+type ResumeDataSection = {
+  experience: BulletPoint[];
+  education: EducationItem[];
+};
+
+export type PageTextType = {
+  home: {
+    topHero: HeroText;
+    bottomHero: HeroText;
+    name: string;
+    header: string;
+    description: string;
+  };
+  projects: {
+    topHero: HeroText;
+    bottomHero: HeroText;
+  };
+  resume: {
+    topHero: HeroText;
+    bottomHero: HeroText;
+    header: string;
+    description: string;
+    resumeData: ResumeDataSection;
+  };
+  tech: {
+    topHero: HeroText;
+    bottomHero: HeroText;
+    header: string;
+    description: string;
+  };
+  about: {
+    topHero: HeroText;
+    bottomHero: HeroText;
+    header: string;
+    description: string;
+  };
+  travel: {
+    topHero: HeroText;
+    bottomHero: {
+      primaryText: string;
+    };
+    header: string;
+    travelPoints: string[];
+    description: string;
+    thingsCovered: string[];
+    cost: string[];
+    ddr: string;
+    dBio: string;
+    rw: string;
+    rBio: string;
+    contactUs: string;
+  };
+  contactButton: {
+    contactMe: string;
+    contactEmail: string;
+  };
+  footer: {
+    header: string;
+    top: string;
+    middle: string;
+    bottom: string;
+  };
+};
+
+const pageText: PageTextType = {
+  home: {
+    topHero: {
+      primaryText: 'DESIGN. DEVELOP. DELIVER.',
+      secondaryText: 'Creating meaningful experiences through unique online ventures',
+    },
+    bottomHero: {
+      primaryText: 'HIRE A FULL STACK ENGINEER TODAY',
+      secondaryText: 'Do you have a project idea and need help from an expert?',
+    },
+    name: 'DANIEL DE LA ROSA',
+    header: 'Senior Full Stack Engineer',
+    description: `With over ${yearsAsDev} years of experience building professional applications and business websites from the ground up, my career has spanned scalable project architecture, legacy code modernization, and client-facing product development. I write clean, deliberate code — and strategically leverage AI tooling to accelerate problem-solving, deepen technical research, and deliver more refined solutions than would otherwise be possible alone.`,
+  },
+  projects: {
+    topHero: {
+      primaryText: 'PLAN. PRODUCE. PUBLISH.',
+      secondaryText: 'Creating meaningful experiences through unique online ventures',
+    },
+    bottomHero: {
+      primaryText: 'GET YOUR WEB PROJECT STARTED TODAY',
+      secondaryText: 'Do you have an idea and need help from an expert?',
+    },
+  },
+  resume: {
+    topHero: {
+      primaryText: 'EXHAUSTIVE. EXTENSIVE. EXPANDED.',
+      secondaryText: 'Review a bit more about my professional background',
+    },
+    bottomHero: {
+      primaryText: 'HIRE A FULL STACK ENGINEER TODAY',
+      secondaryText: 'Do you have a website idea and need help from an expert?',
+    },
+    header: 'Experience goes a long way',
+    description: `With over ${yearsInTech} years in the technology industry and more than ${yearsAsDev} as a Full Stack engineer, I have cultivated a strong foundation in software development across the full stack. I bring both the foundational expertise to build without shortcuts and the awareness to incorporate modern AI tools where they meaningfully improve the quality and efficiency of my work.`,
+    resumeData: {
+      experience: [
+        {
+          company: 'Agility Robotics',
+          tag: "The world's first commercially deployed humanoid robot.",
+          title: 'Senior Software Engineer - Front-End Applications',
+          time: '2023-Present',
+          bulletPoints: [
+            'Lead architectural implementation and dependency analysis, guiding the team in strategic decision-making for the Agility Arc robot management platform',
+            'Implement chosen architectural approaches to enhance overall system robustness and performance',
+            'Migrated frontend application to Vite for faster and more dynamic development',
+            'Implement build, testing and coverage suite to prevent issues moving up into production',
+            'Upgrade CI/CD pipelines, integrating testing and application builds for frontend application',
+            'Created processes for testing with a live Digit, deployment rotations, and on-call coverage',
+          ],
+        },
+        {
+          company: 'Chewy',
+          tag: 'The most trusted and convenient destination for pet parents (and partners) everywhere.',
+          title: 'Senior Full Stack Engineer',
+          time: '2022-2023',
+          bulletPoints: [
+            'Led the development and implementation of the Buy It Again project resulting in improved customer retention and increase in sales through personal recommendations',
+            'Developed and implemented the Related Searches project, enhancing user experience, improving search accuracy for tens of thousands of daily visitors and optimizing SEO strategies to increase organic traffic and improve search engine rankings',
+            'Executed senior-level responsibilities including leading technical initiatives, mentoring junior team members, conducting code reviews, and ensuring adherence to best practices and coding standards to deliver high-quality software solutions',
+          ],
+        },
+        {
+          company: 'Cents',
+          tag: 'Bringing laundry services to the 21st century, all-in-one platform to grow your laundry business.',
+          title: 'Senior Full Stack Engineer',
+          time: '2021-2022',
+          bulletPoints: [
+            'Plan and implement the development of version 2.0 of the flagship mobile and supportive web-based applications',
+            'Guide junior developers in understanding and implement features into the codebase and solving development problems',
+            'Full stack development of full stack features for our multiple mobile and web applications',
+          ],
+        },
+        {
+          company: 'WeSpire',
+          tag: 'Empower companies to design, run, and measure employee experience programs to improve social, environmental, and business outcomes.',
+          title: 'Senior Full Stack Engineer',
+          time: '2021-2021',
+          bulletPoints: [
+            'Principal pod lead managing a number of developers and guiding them to understand the codebase',
+            'Plan the technical infrastructure of a new design system and begin its implementation into the existing codebase',
+            'Tackle new feature development while updating existing codebase to industry standards',
+          ],
+        },
+        {
+          company: 'Near.co (previously UberMedia)',
+          tag: 'Leading independent developer of dynamic advertising and mobile data solutions, and feature-rich mobile applications',
+          title: 'Full Stack Engineer II',
+          time: '2016-2021',
+          bulletPoints: [
+            'Expert development in Angular.js, Vue.js, Node.js, and Ruby on Rails',
+            'Support legacy products with any development updates, bugfixes, and 3rd party compliances',
+            'Provide primary frontend development for all of UberMedia offerings',
+          ],
+        },
+        {
+          company: 'Xupe',
+          tag: 'Plan, design, and develop beautiful websites and applications tailored to your business',
+          title: 'Full Stack Engineer',
+          time: '2020-2021',
+          bulletPoints: [
+            'Building full stack websites and mobile applications using only the latest technologies such as React.js and Node.js',
+            "Provide complete application development for all of our clients' needs",
+            'Support legacy products with any development updates, bugfixes, and 3rd party compliances',
+          ],
+        },
+        {
+          company: 'Near.co (previously UberMedia)',
+          tag: 'Leading independent developer of dynamic advertising and mobile data solutions, and feature-rich mobile applications',
+          title: 'Quality Assurance Engineer',
+          time: '2014-2016',
+          bulletPoints: [
+            'Identify, record, document, and track bugs using Sprint.ly and Jira Project Tracking software',
+            'Design, develop, and execute automation scripts for test plans and test cases using Selenium IDE',
+            'Perform thorough regression testing with Selenium IDE and manually when needed when bugs are resolved',
+          ],
+        },
+        {
+          company: 'Near.co (previously UberMedia)',
+          tag: 'Leading independent developer of dynamic advertising and mobile data solutions, and feature-rich mobile applications',
+          title: 'Associate Community Manager',
+          time: '2011-2014',
+          bulletPoints: [
+            'Provided customer support for multiple mobile applications using Zendesk, Tender Support, and TwitSpark',
+            'Planned and implemented engagement programs for applications using Twitter, Facebook, and YouTube',
+            'Drafted, developed and executed a communication program to 9 million Twitter followers',
+          ],
+        },
+      ],
+      education: [
+        {
+          school: 'HackReactor',
+          degree: 'Advanced Software Engineering',
+          time: '2015-2016',
+        },
+        {
+          school: 'University of California, Irvine',
+          degree: 'BA Art History',
+          time: '2005-2008',
+        },
+        {
+          school: 'University of California, Irvine',
+          degree: 'BA Sociology',
+          time: '2005-2008',
+        },
+      ],
+    },
+  },
+  tech: {
+    topHero: {
+      primaryText: 'CONCEIVE. COMPOSE. CREATE.',
+      secondaryText: 'The tools of my trade',
+    },
+    bottomHero: {
+      primaryText: 'GET YOUR WEB PROJECT STARTED TODAY',
+      secondaryText:
+        'With expertise on these technologies your website will be exactly as you want it.',
+    },
+    header: 'Creating what you want with the right tools',
+    description:
+      'Wielding a variety of technologies and support libraries, website design and development becomes easier. Below is a condensed list of the technologies which will make your online presence be clear and concise.',
+  },
+  about: {
+    topHero: {
+      primaryText: 'PASSION. PERSONALITY. PERSPECTIVE.',
+      secondaryText: 'Learn a bit more about who I am away from my laptop.',
+    },
+    bottomHero: {
+      primaryText: 'HIRE A FULL STACK ENGINEER TODAY',
+      secondaryText: 'Do you have a website idea and need help from an expert?',
+    },
+    header: 'Fun Facts',
+    description: `I am an avid partner-acrobatics certified educator, I have played drums for over ${
+      yearsInTech + 13
+    } years and guitar for ${yearsInTech}, ran the 2009 Los Angeles Marathon and a number of half-marathons, learned development with HackReactor, became a digital nomad in 2017 with Remote Year and traveled the world for 7 years visiting over 35 countries carrying a ukulele. I now reside in St. Louis, MO.`,
+  },
+  travel: {
+    topHero: {
+      primaryText: 'DEVIATE. DESIGN. DEPART.',
+      secondaryText: 'Travel the world while "working from home".',
+    },
+    bottomHero: {
+      primaryText: 'BEGIN YOUR WORK FROM HOME TRAVEL LIFE',
+    },
+    header: 'Curious about the digital nomad life?',
+    travelPoints: [
+      'Ready to deviate from the office life?',
+      'Have you read The 4-Hour Workweek and thought to yourself, YES.',
+      "Desire to achieve location independence but don't know where to start?",
+      'We are seasoned digital nomads, and we can help.',
+    ],
+    description:
+      "You can spend hours, days, combing through digital nomad blogs, and get tons of info. We don't know everything, and we haven't invented the lifestyle, but how often can you have a one-on-one conversation in real time with someone who is actually doing this? We'll share with you our personal journeys from being location-bound, stuff-bound, and not at all mobile, to eating cevapi in Bosnia, hiking Table Mountain in South Africa, taking care of chickens in Ireland, and many more experiences. What we do day to day, how we make decisions about where to go, how we manage money, how we cope with stuff, with lack of stuff, the incredible experiences, the level-3 fun, the moving, the loneliness, the languages, the newness...",
+    thingsCovered: [
+      'Prioritizing your priorities: Wifi, Safety, Fun. And more. Balancing the reckless fun with the adulting.',
+      'Is digital nomading affordable? Extremely.',
+      'Visas & the Beast: Schengen Zone.',
+      'Build your tribe: how to keep a social life while on the road.',
+      'MONEY & Tools.',
+      "Perfect life? Not always. Here are some ways digital nomading can suck, so you're prepared.",
+    ],
+    cost: ['$90 for 90 minutes.', "It's the cost of a nice date night in Cape Town."],
+    ddr: 'Daniel De La Rosa',
+    dBio: ` traveled the world for over 7 years. After building a solid career in software development in an office in Pasadena, California, he realized that he was in a position to do a redesign of the way he worked. He began working remotely, and shortly after he signed up to travel with the program Remote Year. After 12 months and 15 countries, there was no way he was going back to a desk. In the years that followed, Daniel developed a personal system that enabled him to continue the nomadic lifestyle while also achieving financial freedom, stability, and control.`,
+    rw: 'Rachel Whitener',
+    rBio: ' became successful as a professional chef in Los Angeles during her 10 years living in the city. After a trip to Morocco she saw the opportunity to travel the world and redefine herself as a digital nomad. A few months after joining Daniel, she started a new career as a Virtual Assistant and Account Manager while also teaching social media Master Classes. With a year of nomading under her belt, she has now visited over 20 countries and has a growing wishlist of new places to explore.',
+    contactUs: 'contact us',
+  },
+  contactButton: {
+    contactMe: 'CONTACT ME',
+    contactEmail: 'dela1000@gmail.com',
+  },
+  footer: {
+    header: 'Create beautiful, responsive, and interactive websites exactly as you want them.',
+    top: `© ${currentYear} Daniel De La Rosa. All rights reserved.`,
+    middle: 'All photos by Daniel De La Rosa.',
+    bottom: 'Developed with React, Next.js and TailwindCSS, and deployed to Netlify.',
+  },
+};
+
+export default pageText;
